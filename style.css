@@ -99,6 +99,9 @@ body {}
     max-width: 80px;
     text-align: center;
 }
+.metismenu .active{
+    background-color:#48464D;
+}
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
     display:none;
 }
@@ -172,10 +175,19 @@ ul.dtl-social li a{
 	display:none;
     
 }
+.sidebar-title{
+    margin-top: 5px !important;
+}
 .main-logo{
     width: 214px !important;
     height: auto;
 
+}
+.bmind-tar{
+    margin-top: 25px;
+}
+.bmind-tar .status{
+    border: none !important;
 }
 #sidebar.active
 #sidebar.active .sidebar-header h3{
@@ -937,6 +949,7 @@ ul.breadcome-menu li a:hover{
 	/* padding:20px; */
 	background: #1A1721;
     border: 2px solid #635BFE;
+    border-radius: 5px;
 }
 .oth-wallet .analysis-progrebar-ctn{
     border: none;

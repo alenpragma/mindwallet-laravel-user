@@ -100,3 +100,15 @@
     }); 	   
  
 })(jQuery); 
+
+// click to active sidebar
+
+var header = document.getElementById("menu1");
+var btns = header.getElementsByClassName("click-acive");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
