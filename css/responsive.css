@@ -104,7 +104,10 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-.container {width:300px}
+.container {
+    /* width:300px; */
+    position: absolute;
+}
 .left-sidebar-pro{
 	display:none;
 }
@@ -112,12 +115,26 @@
     margin-left: 0px;
 }
 .mobile-menu-area{
-	display:block;
+    display: block;
+    float: right;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: none;
 }
 .logo-pro{
 	display:block;
 	text-align:center;
-	background:#fff;
+	/* background:#fff; */
+}
+.header-right-info{
+    display: flex;
+}
+.mind-wallet{
+    border-left:none ;
+    border-top: 2px solid #919191;
+}
+.cp-url{
+    font-size: 12px;
 }
 .menu-switcher-pro{
 	display:none;
