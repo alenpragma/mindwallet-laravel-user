@@ -170,6 +170,12 @@ ul.dtl-social li a{
 }
 #sidebar.active .sidebar-header .main-logo{
 	display:none;
+    
+}
+.main-logo{
+    width: 214px !important;
+    height: auto;
+
 }
 #sidebar.active
 #sidebar.active .sidebar-header h3{
@@ -984,6 +990,41 @@ display: flex;
 margin-right: 30px;
 
 }
+.st-wallet-list .st-wallet-titel{
+    margin: 4px 0;
+    background: #2E293A;
+    border-radius: 4px;
+}
+.st-wallet-list .no-bg{
+    background: none;
+    margin-bottom: 0;
+}
+.st-wallet-list .col-sm-2{
+    width: 20% !important;
+
+}
+.st-wallet-list .wallet-single-name{
+    display: flex;
+}
+.st-wallet-list p{
+    margin-top: 3px;
+}
+.st-wallet-list .st-com{
+    padding-top: 10px;
+}
+.st-wallet-list .st-com button{
+    padding: 5px 10px;
+    background: #635BFE;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+.st-wallet-list .wallet-single-name img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 .counter h2{
     font-size: 20px !important;
 }
@@ -992,7 +1033,7 @@ margin-right: 30px;
 }
 .product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-nalika-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single{
 	padding:20px;
-	background:#1b2a47;
+	/* background:#1b2a47; */
 }
 .graph-rp{
 	text-align:right;
@@ -1052,7 +1093,7 @@ ul.cus-product-sl-rp li h5{
 	color:#f1901e;
 }
 .mind-wallet{
-    border-right: 2px solid #919191;
+    border-left: 2px solid #919191;
     padding: 4px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -1128,6 +1169,8 @@ background: #635BFE;
 padding: 20px 15px;
 
 }
+
+
 ul.two-part-sp li{
 	display:inline-block;
 	width: 49%;
@@ -2569,6 +2612,7 @@ ul.tab-custon-design li.active a, ul.tab-review-design li.active a{
     position: relative;
     display: table;
     border-collapse: separate;
+    text-align: left;
 }
 .input-group-addon:first-child {
     border-right: 0;
@@ -3061,7 +3105,7 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
 }
 .main-sparkline8-hd h1, .main-sparkline9-hd h1, .main-spark7-hd h1, .main-sparkline10-hd h1, .main-sparkline11-hd h1, .main-sparkline12-hd h1, .main-sparkline13-hd h1, .main-sparkline14-hd h1{
 	font-size:20px;
-	color:#303030;
+	color:#ffffff;
 }
 .basic-choropleth {
     height: 400px;
