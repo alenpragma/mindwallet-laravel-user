@@ -72,7 +72,6 @@
 .header-right-info .navbar-nav {
     float: none;
 	text-align:center;
-	margin: 0px 230px;
 }
 .responsive-dn-stock{
 	display:none;
@@ -144,8 +143,14 @@
 }
 .header-right-info .navbar-nav {
     float: none;
-	text-align:center;
+	text-align:left;
+    position: relative;
+    left: 100px;
 }
+.header-right-info ul.header-right-menu li .author-log {
+    margin-left: 15px !important;
+}
+.mean-container .mean-nav ul{margin-left: 240px;}
 .header-right-info ul.header-right-menu li .author-message-top {
     left: 4px;
 	z-index:99999999;
