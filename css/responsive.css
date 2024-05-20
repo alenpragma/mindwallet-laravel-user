@@ -150,6 +150,19 @@
 .header-right-info ul.header-right-menu li .author-log {
     margin-left: 15px !important;
 }
+.st-wallet-list .st-wallet-titel .d-flex{
+    display: flex;
+    font-size: 10px !important;
+}
+.st-wallet-list .st-wallet-titel img{
+    display: none;
+}
+.st-wallet-list .st-wallet-titel svg{
+    display: none;
+}
+/* .wallet-st{
+    width: 50px !important;
+} */
 .mean-container .mean-nav ul{margin-left: 240px;}
 .header-right-info ul.header-right-menu li .author-message-top {
     left: 4px;
