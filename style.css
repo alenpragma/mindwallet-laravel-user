@@ -1029,16 +1029,17 @@ margin-right: 30px;
     padding: 0 25px;
     height: 60px;
     position: fixed;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
     background: #5d5fd3;
-    border-radius: 100px;
+    /* border-radius: 100px; */
 }
 .bottom-appbar a {
     color: #75ffd26b;
     text-align: center;
+
 }
 .bottom-appbar a.active {
     color: #2fe7ab;
