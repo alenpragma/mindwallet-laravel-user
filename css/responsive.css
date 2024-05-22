@@ -160,13 +160,18 @@
 .st-wallet-list .st-wallet-titel svg{
     display: none;
 }
-/* .wallet-st{
-    width: 50px !important;
-} */
+#countdown{
+    margin: 20px 80px;
+    margin-bottom: 5px;
+}
 .mean-container .mean-nav ul{margin-left: 240px;}
 .header-right-info ul.header-right-menu li .author-message-top {
     left: 4px;
 	z-index:99999999;
+}
+.mobile-screen-show {
+    display: block;
+    position: relative
 }
 .header-right-info ul.header-right-menu li .notification-author {
     left: -33px;
