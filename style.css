@@ -1036,6 +1036,13 @@ margin-right: 30px;
     background: #5d5fd3;
     border-radius: 100px;
 }
+.bottom-appbar a {
+    color: #75ffd26b;
+    text-align: center;
+}
+.bottom-appbar a.active {
+    color: #2fe7ab;
+}
 .st-wallet-list .col-sm-2{
     width: 20% !important;
 
