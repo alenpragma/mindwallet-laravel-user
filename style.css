@@ -1143,11 +1143,20 @@ ul.cus-product-sl-rp li h5{
     border-left: 2px solid #919191;
     padding: 4px;
     padding-top: 14px;
-    padding-bottom: 14px;
 }
-.wallet-amount, .profile-section{
-    padding: 20px;
+.mnd-walet{
+    display: flex;
+}
+.mnd-walet .wlt-name{
+    display: flex;
+}
+.wallet-amount{
+    padding: 15px;
     padding-right: 0;
+}
+.profile-section{
+    display: flex;
+    margin: 15px;
 }
 .wallet-amount .button-section .btn{
     margin: 3px;
@@ -1167,7 +1176,7 @@ ul.cus-product-sl-rp li h5{
 
 }
 .wallet-amount .button-section .stake{
-    padding: 5px 16px;
+    padding: 5px 9px;
     background: #1DF6FF;
     color: black;
 
@@ -1175,15 +1184,13 @@ ul.cus-product-sl-rp li h5{
 .wallet-amount .button-section span{
     margin: 2px;
 }
-.profile-section{
-    display: flex;
-}
 .dp-img{
     width: 100px;
     display: flex;
 }
 .dp-img img{
-    
+    width: 80px;
+    height: 80px;
     border-radius: 8px;
 }
 .profile-section .profile-details{

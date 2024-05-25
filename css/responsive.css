@@ -6,6 +6,11 @@
 .mobile-menu-area{
 	display:none;
 }
+.header-right-info .navbar-nav {
+    width: 300px;
+    margin-left: -80px;
+    float: left;
+}
 .logo-pro{
 	display:block;
 	text-align:center;
@@ -41,9 +46,27 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.res-mg-t-15{
+/* .res-mg-t-15{
 	margin-top:15px;
+} */
+.wallet-amount .button-section .stake {
+    padding: 5px 12px !important;
 }
+.all-content-wrapper{
+    margin-left: 214px;
+}
+#sidebar{
+    min-width: 214px;
+}
+svg{
+    display: none;
+}
+.wallet-amount .button-section .btn {
+    padding: 5px !important;
+    font-size: 9px !important;
+    margin: 0;
+}
+
 }
 
  
