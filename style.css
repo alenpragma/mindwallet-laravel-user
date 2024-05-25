@@ -34,7 +34,9 @@ margin: 0;
 padding: 0
 }
 .clear{clear:both}
-body {}
+.text-white{
+    color: #ffffff !important;
+}
 
 .mg-tb-30{
 	margin:30px 0px;
@@ -1191,6 +1193,8 @@ ul.cus-product-sl-rp li h5{
 }
 .admin-content .prof-url{
     margin-left: 20px;
+    font-size: 14px !important; 
+    font-weight: 500;
 }
 .admin-content .prof-url .invt{
 font-size: 14px;
@@ -1198,7 +1202,7 @@ font-weight: 500;
 line-height: 18px;
 text-align: left;
 color: #ffffff;
-margin-right: 10px;
+margin-left: 10px;
 
 }
 .admin-content .prof-url .text-red{
@@ -3903,4 +3907,30 @@ th.fc-day-header.fc-widget-header {
 	background:#152036;
 	border-color: #152036;
 	color:#fff;
+}
+
+
+.copy-container {
+    display: flex;
+    align-items: center;
+}
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.copy-icon, .clipboard-icon {
+    font-size: 16px;
+    margin-top: -15px !important;
+    display: none;
+}
+.copy-icon {
+    display: inline;
+}
+.hidden-input {
+    position: absolute;
+    left: -9999px;
 }

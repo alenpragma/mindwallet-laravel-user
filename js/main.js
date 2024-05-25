@@ -126,3 +126,22 @@ $(document).ready(function () {
 	});
 
 });// Timer counter end 
+
+// copy url
+function copyURL() {
+	const urlText = document.getElementById('urlText').innerText;
+	const hiddenInput = document.getElementById('hiddenInput');
+	// hiddenInput.value = value;
+	hiddenInput.select();
+	document.execCommand('copy');
+
+	const copyIcon = document.querySelector('.copy-icon');
+	const clipboardIcon = document.querySelector('.clipboard-icon');
+	copyIcon.style.display = 'none';
+	clipboardIcon.style.display = 'inline';
+
+	setTimeout(() => {
+		clipboardIcon.style.display = 'none';
+		copyIcon.style.display = 'inline';
+	}, 1000);
+}
