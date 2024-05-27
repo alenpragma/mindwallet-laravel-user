@@ -51,6 +51,7 @@
 } */
 .wallet-amount .button-section .stake {
     padding: 5px 12px !important;
+    margin-left: 3px;
 }
 .all-content-wrapper{
     margin-left: 214px;
@@ -65,6 +66,9 @@ svg{
     padding: 5px !important;
     font-size: 9px !important;
     margin: 0;
+}
+.mind-sec .mindn, .mind-sec .pricem {
+    font-size: 10px;
 }
 
 }
@@ -120,7 +124,24 @@ svg{
 .res-mg-t-30{
 	margin-top:30px;
 }
-
+.mind-sec .mindn, .mind-sec .pricem {
+    font-size: 10px;
+}
+.header-right-info .navbar-nav {
+    width: 300px;
+    margin-left: 340px;
+    float: left;
+}
+.mobile-menu-area{
+    display: block;
+    float: right;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: none;
+}
+svg{
+    display: none;
+}
 }
 
  
@@ -317,6 +338,9 @@ svg{
     margin: 12px 0px;
     display: block;
 }
+.col-sm-6{
+    width: 100% !important;
+}
 }
  
 /* Large Mobile :480px. */
@@ -332,5 +356,13 @@ svg{
 .knob-single input {
     right: 120px;
 }
+.mobile-menu-area{
+    margin-left: 20px !important;
+}
+}
+@media only screen and (min-width: 300px){
+    .mobile-menu-area{
+        margin-left: 4px !important;
+    }
 }
  

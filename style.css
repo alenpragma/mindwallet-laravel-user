@@ -982,6 +982,7 @@ justify-content: space-between;
 font-size: 14px;
 font-weight: 500;
 padding: 15px;
+text-align: start;
 
 }
 .ot-wallet .wallet-amount .mind-sub-wallet .bmind, .ot-wallet .wallet-amount .mind-sub-wallet .musd, .ot-wallet .wallet-amount .mind-sub-wallet .usdt{
@@ -1147,9 +1148,6 @@ ul.cus-product-sl-rp li h5{
 .mnd-walet{
     display: flex;
 }
-.mnd-walet .wlt-name{
-    display: flex;
-}
 .wallet-amount{
     padding: 15px;
     padding-right: 0;
@@ -1203,6 +1201,9 @@ ul.cus-product-sl-rp li h5{
     font-size: 14px !important; 
     font-weight: 500;
 }
+.dbprice{
+    margin-bottom: 30px !important;
+}
 .admin-content .prof-url .invt{
 font-size: 14px;
 font-weight: 500;
@@ -1225,7 +1226,11 @@ background: #635BFE;
 padding: 20px 15px;
 
 }
-
+.wlt-name{
+    font-size: 14px !important;
+    margin-top: 20x !important;
+    margin-left: 10px;
+}
 
 ul.two-part-sp li{
 	display:inline-block;
