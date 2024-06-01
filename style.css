@@ -1021,8 +1021,68 @@ margin-right: 30px;
     margin-bottom: 0;
     color: #d1d1d1 !important;
 }
+.all-feature-mobile {
+    /* background:none; */
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #00000021;
+}
+.moretext {
+    display: none;
+}
 .mobile-screen-show {
     display: none;
+}
+.all-feature-mobile .title {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #00000021;
+    padding-bottom: 10px;
+    color: #3a3939;
+}
+.mobile-nav{
+    border: 2px solid #635BFE;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-bottom: 4px solid #635BFE;
+    display: none;
+}
+.all-feature-mobile .contents .single {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.all-feature-mobile .contents .single a {
+    color: #080707;
+}
+.all-feature-mobile .contents .single a .icon {
+    margin: auto;
+    margin-bottom: 5px;
+    position: relative;
+}
+.all-feature-mobile .contents .single a .name {
+    color: #ffffffc7;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.all-feature-mobile .contents .single {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.grad-btn {
+    background: #1DF6FF;
+    color: black;
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .bottom-appbar {
     display: flex;
@@ -1183,13 +1243,24 @@ ul.cus-product-sl-rp li h5{
     margin: 2px;
 }
 .dp-img{
-    width: 100px;
+    width: 200px;
     display: flex;
 }
 .dp-img img{
     width: 80px;
-    height: 80px;
+    height: 68px;
+    margin-top: 5px;
     border-radius: 8px;
+}
+.rank-ico{
+    margin: 5px;
+    width: 200px;
+    display: flex;
+}
+.rank-ico img{
+    width: 80px;
+    height: 59px;
+    border-radius: 100%;
 }
 .profile-section .profile-details{
     width: 500px;

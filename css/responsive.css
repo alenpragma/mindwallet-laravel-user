@@ -160,9 +160,17 @@ svg{
 .mobile-menu-area{
     display: block;
     float: right;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 30px;
     background: none;
+}
+.dp-img img{
+    height:53px;
+    margin-top: 8px;
+}
+.rank-ico img{
+    height:48px;
+    margin-top: 4px;
 }
 .logo-pro{
 	display:block;
@@ -189,7 +197,7 @@ svg{
     float: none;
 	text-align:left;
     position: relative;
-    left: 100px;
+    left: 160px;
 }
 .header-right-info ul.header-right-menu li .author-log {
     margin-left: 15px !important;
@@ -216,6 +224,15 @@ svg{
 .mobile-screen-show {
     display: block;
     position: relative
+}
+.mobile-navigation .col-sm--4{
+    width: 33.33333% !important;
+}
+.mobile-nav .col-sm-4{
+    width: 33.33333% !important;
+}
+.mobile-nav{
+    display: block;
 }
 .header-right-info ul.header-right-menu li .notification-author {
     left: -33px;
@@ -341,6 +358,9 @@ svg{
 .col-sm-6{
     width: 100% !important;
 }
+.header-right-info .navbar-nav{
+    padding: 8px 0;
+}
 }
  
 /* Large Mobile :480px. */
@@ -358,6 +378,9 @@ svg{
 }
 .mobile-menu-area{
     margin-left: 20px !important;
+}
+.mobile-nav .col-sm-4{
+    width: 33.33333% !important;
 }
 }
 @media only screen and (min-width: 300px){
