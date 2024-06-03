@@ -145,3 +145,20 @@ function copyURL() {
 		copyIcon.style.display = 'inline';
 	}, 1000);
 }
+
+
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    var main = document.getElementById("main");
+    var button = document.querySelector('.togglebtn');
+
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+        main.style.marginLeft = "0";
+        button.innerHTML = "☰ Open Sidebar";
+    } else {
+        sidebar.style.width = "250px";
+        main.style.marginLeft = "250px";
+        button.innerHTML = "× Close Sidebar";
+    }
+}

@@ -137,6 +137,15 @@ padding: 0
 .profile-dtl {
     text-align: center;
 }
+.admin{
+    margin-top: 60px;
+}
+.coin-img img{
+    display: none;
+    width: 60px;
+    margin-top: -107px;
+    margin-left: 236px;
+}
 .profile-dtl img {
     width: 75px;
     height: 75px;
@@ -181,9 +190,12 @@ ul.dtl-social li a{
     margin-top: 5px !important;
 }
 .main-logo{
-    width: 214px !important;
+    width: 190px !important;
     height: auto;
-
+    padding: 5px 36px 5px 0;
+}
+.logo-pro{
+    display: none;
 }
 .bmind-tar{
     margin-top: 25px;
@@ -273,6 +285,7 @@ ul.dtl-social li a{
 }
 .menu-switcher-pro {
 	transition:all .4s ease 0s;
+    margin-left: 46px;
 }
 .menu-switcher-pro i{
 	font-size:20px;
