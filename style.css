@@ -285,7 +285,6 @@ ul.dtl-social li a{
 }
 .menu-switcher-pro {
 	transition:all .4s ease 0s;
-    margin-left: 46px;
 }
 .menu-switcher-pro i{
 	font-size:20px;
@@ -994,10 +993,15 @@ justify-content: space-between;
 .mind-sec .mindn, .mind-sec .pricem{
 font-size: 14px;
 font-weight: 500;
-padding: 15px;
+padding: 10px;
 text-align: start;
 
 }
+.mind-sec .pricem span{
+    margin-left: 8px;
+    font-size: 11px;
+    
+    }
 .ot-wallet .wallet-amount .mind-sub-wallet .bmind, .ot-wallet .wallet-amount .mind-sub-wallet .musd, .ot-wallet .wallet-amount .mind-sub-wallet .usdt{
 font-size: 12px;
 font-weight: 400;
@@ -1526,7 +1530,7 @@ ul.two-part-sp li{
     position: fixed;
     background: #121110;
     z-index: 99;
-    left: 200px;
+    left: 247px;
     right: 0;
     top: 0;
     margin: 0 auto;
@@ -4029,4 +4033,14 @@ th.fc-day-header.fc-widget-header {
 .hidden-input {
     position: absolute;
     left: -9999px;
+}
+.mind-live-price{
+    display: none;
+    margin: 20px 17px 0 17px;
+    border: 2px solid #635BFE;
+    border-radius: 5px;
+    padding: 15px 8px;
+}
+.mind-live-price .mind-sec{
+    border: none;
 }

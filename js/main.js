@@ -162,3 +162,15 @@ function toggleSidebar() {
         button.innerHTML = "× Close Sidebar";
     }
 }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('new_price').textContent = data.price;
+                document.getElementById('change').textContent = data.change;
+            })
+            .catch(error => {
+                console.error('Error fetching market data:', error);
+            });
+    });
