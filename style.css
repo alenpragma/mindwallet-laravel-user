@@ -75,6 +75,9 @@ padding: 0
 /*----------------------------------------*/
 /*  8. Menu collapse Area
 /*----------------------------------------*/
+/* button{
+    border: none;
+} */
 .all-content-wrapper {
     margin-left: 252px;
     transition: all 0.3s;
@@ -91,6 +94,7 @@ padding: 0
     transition: all 0.3s;
 	z-index:999;
 	height:100%;
+    top: 0;
 }
 .mini-navbar .all-content-wrapper {
     margin-left: 80px;
@@ -1232,6 +1236,9 @@ ul.cus-product-sl-rp li h5{
 .profile-section{
     display: flex;
     margin: 15px;
+}
+.wallet-amount .button-section{
+    display: flex;
 }
 .wallet-amount .button-section .btn{
     margin: 3px;
@@ -4022,12 +4029,12 @@ th.fc-day-header.fc-widget-header {
     align-items: center;
     margin-left: 10px;
 }
-.copy-icon, .clipboard-icon {
+.copy-icon, .clipboard-icon, .copy-usdt-depo-wall, .clipboard-usdt-depo-wall, .copy-usdt-with-wall, .clipboard-usdt-with-wall{
     font-size: 16px;
     margin-top: -15px !important;
     display: none;
 }
-.copy-icon {
+.copy-icon, .copy-usdt-depo-wall {
     display: inline;
 }
 .hidden-input {
@@ -4057,4 +4064,50 @@ th.fc-day-header.fc-widget-header {
 }
 #mind-sec .mindp{
     text-align: center !important;
+}
+
+.modal-content{
+    background-color: #1A1721;
+    border: 1px solid #007478;
+}
+.modal .close{
+    color: white;
+    margin-top: -27px;
+}
+.close:hover{
+    color: #00fff5;
+}
+.modal-header{
+    border-bottom: 1px solid #00fff5;
+}
+.modal-footer{
+    border-top: 1px solid #00fff5;
+}
+.modal .form-control {
+    background: none;
+    border: 1px solid #0d404e;
+    border-radius: 3px;
+    color: #c5c5c5;
+}
+.modal .form-select{
+    background-color: #1a1722;
+    border: 1px solid #0d404e;
+}
+.modal .copy-button{
+    float: right;
+    margin-top: -15px;
+    margin-right: 5px;
+}
+.m-stake label{
+    width: 50% !important;
+    margin: 10px;
+}
+.m-stake .form-control{
+    width: 50% !important;
+    border: none;
+    border-left: 1px solid #0d404e;
+}
+.m-stake .form-group{
+    display: flex !important;
+    border: 1px solid #0d404e;
 }
