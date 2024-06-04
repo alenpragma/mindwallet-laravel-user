@@ -163,14 +163,43 @@ function toggleSidebar() {
     }
 }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('new_price').textContent = data.price;
-                document.getElementById('change').textContent = data.change;
-            })
-            .catch(error => {
-                console.error('Error fetching market data:', error);
-            });
-    });
+
+fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt')
+    .then(response => response.json())
+    .then(json => {
+      const newPrice = json.data.new_price;
+      const change = parseFloat(json.data.change);
+console.log(change);
+      // Update the HTML content
+      document.querySelector('#priceValue').textContent = `${newPrice}`;
+      const changeElement = document.querySelector('#changeValue');
+      changeElement.textContent = `${change}`;
+
+      // Set the color based on the value of change
+      if (change >= 0) {
+        changeElement.style.color = 'green';
+      } else {
+        changeElement.style.color = 'red';
+      }
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+	fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt')
+    .then(response => response.json())
+    .then(json => {
+      const newPrice = json.data.new_price;
+      const change = parseFloat(json.data.change);
+console.log(change);
+      // Update the HTML content
+      document.querySelector('#priceValue2').textContent = `${newPrice}`;
+      const changeElement = document.querySelector('#changeValue2');
+      changeElement.textContent = `${change}`;
+
+      // Set the color based on the value of change
+      if (change >= 0) {
+        changeElement.style.color = 'green';
+      } else {
+        changeElement.style.color = 'red';
+      }
+    })
+    .catch(error => console.error('Error fetching data:', error));

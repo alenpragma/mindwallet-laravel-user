@@ -244,11 +244,13 @@
             <div class="header-top-area">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="mobile-screen-show">
                                 <div class="bottom-appbar">
                                     <a href="" class="active">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-dashboard" icon-name="layout-dashboard" class="lucide lucide-layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>
+                                        <svg class="icon-wrap" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.5 1.1875C9.78125 0.96875 10.1875 0.96875 10.4688 1.1875L18.7188 8.1875C19.0312 8.46875 19.0938 8.9375 18.8125 9.25C18.5312 9.5625 18.0625 9.59375 17.75 9.34375L17 8.6875V14.5C17 15.9062 15.875 17 14.5 17H5.5C4.09375 17 3 15.9062 3 14.5V8.6875L2.21875 9.34375C1.90625 9.59375 1.4375 9.5625 1.15625 9.25C0.90625 8.9375 0.9375 8.46875 1.25 8.1875L9.5 1.1875ZM10 2.75L4.5 7.40625V14.5C4.5 15.0625 4.9375 15.5 5.5 15.5H14.5C15.0312 15.5 15.5 15.0625 15.5 14.5V7.40625L10 2.75ZM9 10H11V8H9V10ZM7.5 7.75C7.5 7.0625 8.03125 6.5 8.75 6.5H11.25C11.9375 6.5 12.5 7.0625 12.5 7.75V10.25C12.5 10.9688 11.9375 11.5 11.25 11.5H8.75C8.03125 11.5 7.5 10.9688 7.5 10.25V7.75Z" fill="white"/>
+                                            </svg>
                                     </a>
                                     <a href="" class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" icon-name="download" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
@@ -382,18 +384,12 @@
                 </div>
             </div>
         </div>
-        <div class="mind-live-price">
+        <div class="mind-live-price text-center">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="mind-sec ">
-                        <div class="mindp text-white">MIND Price:</div>
-                        <div class="pricemind text-white" >0.4100</div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="mind-sec sdevice">
-                        <div class="market text-white">change:</div>
-                        <div class="market-v market text-danger" >- 36%</div>
+                <div class="col-sm-3">
+                    <div class="mind-sec text-center" id="mind-sec">
+                        <div class="mindp text-white text-center">Mindchain Coin(MIND):</div>
+                        <div class="pricemind text-white m-flex" ><p id="priceValue2"></p> <span id="changeValue2"></span></div>
                     </div>
                 </div>
             </div>
@@ -424,7 +420,7 @@
                                         </div>
                                     </div>
                                     <div class="copy-container prof-url">
-                                        <p class="cp-url">Invite: <span class="invt text-lowercase" id="urlText"> https://my.mind....com/ref?FERFWE3</span></p>
+                                        <p class="cp-url">Invite: <span class="invt text-lowercase" id="urlText"> my.mind....r/ref?FERFWE3</span></p>
                                         <button class="copy-button" onclick="copyURL()">
                                         <i class="fa-solid fa-copy copy-icon"></i>
                                             <i class="fa-solid fa-clipboard clipboard-icon text-warning"></i>
@@ -989,7 +985,10 @@
                                     <div>
                                         <div class="mind-sec">
                                             <div class="mindn">MIND Price:</div>
-                                            <div class="pricem" id="">0.41005555<span class="text-danger">- 36%</span></div>
+                                            <div class="pricem m-flex" >
+                                                <p id="priceValue"></p>
+                                                <p id="changeValue"></p>
+                                            </div>
                                         </div>
                                         <div class="mind-sec">
                                             <div class="mindn bmind">BMIND Price:</div>
