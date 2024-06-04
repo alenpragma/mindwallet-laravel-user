@@ -154,6 +154,9 @@ svg{
     /* width:300px; */
     position: absolute;
 }
+.section-admin{
+    margin-top: 0;
+}
 .left-sidebar-pro{
 	display:none;
 }
@@ -380,6 +383,11 @@ svg{
  display: flex;
  
 }
+.mind-live-price .mind-sec{
+    margin: auto;
+    text-align: center !important;
+    
+   }
 .mind-live-price .sdevice{
     border-left:1px solid #919191;
     padding-left: 20px;

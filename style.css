@@ -4036,11 +4036,25 @@ th.fc-day-header.fc-widget-header {
 }
 .mind-live-price{
     display: none;
-    margin: 20px 17px 0 17px;
-    border: 2px solid #635BFE;
-    border-radius: 5px;
-    padding: 15px 8px;
+}
+.mind-live-price .col-sm-3{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 .mind-live-price .mind-sec{
     border: none;
+}
+.mind-live-price #changeValue2{
+    margin-left: 10px;
+}
+.m-flex{
+    display: flex;
+}
+.pricem #changeValue{
+    margin-left: 10px;
+}
+#mind-sec .mindp{
+    text-align: center !important;
 }
