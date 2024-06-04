@@ -380,7 +380,8 @@ svg{
     padding-left: 0;
 }
 .mind-live-price .row{
- display: flex;
+ /* display: flex; */
+ width: 100%;
  
 }
 .mind-live-price .mind-sec{
