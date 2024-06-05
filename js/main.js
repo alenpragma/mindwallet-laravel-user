@@ -164,45 +164,66 @@ function toggleSidebar() {
 }
 
 
-fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt')
-    .then(response => response.json())
-    .then(json => {
-      const newPrice = json.data.new_price;
-      const change = parseFloat(json.data.change);
-      // Update the HTML content
-      document.querySelector('#priceValue').textContent = `${newPrice}`;
-      const changeElement = document.querySelector('#changeValue');
-      changeElement.textContent = `${change}`;
+async function fetchMindPrice() {
+	try {
+		const response = await fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt');
+		if (response.ok) {
+			const json = await response.json();
+			const newPrice = json.data.new_price;
+			const change = parseFloat(json.data.change);
 
-      // Set the color based on the value of change
-      if (change >= 0) {
-        changeElement.style.color = 'green';
-      } else {
-        changeElement.style.color = 'red';
-      }
-    })
-    .catch(error => console.error('Error fetching data:', error));
+			// Update the HTML content
+			document.querySelector('#priceValue').textContent = `${newPrice}`;
+			const changeElement = document.querySelector('#changeValue');
+			changeElement.textContent = `${change}`;
+
+			// Set the color based on the value of change
+			if (change >= 0) {
+				changeElement.style.color = 'green';
+			} else {
+				changeElement.style.color = 'red';
+			}
+		} else {
+			console.error('Failed to fetch price:', response.status);
+		}
+	} catch (error) {
+		console.error('Error fetching data:', error);
+	}
+}
+
+fetchMindPrice();
+setInterval(fetchMindPrice, 5000);
 
 
-	fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt')
-    .then(response => response.json())
-    .then(json => {
-      const newPrice = json.data.new_price;
-      const change = parseFloat(json.data.change);
-      // Update the HTML content
-      document.querySelector('#priceValue2').textContent = `${newPrice}`;
-      const changeElement = document.querySelector('#changeValue2');
-      changeElement.textContent = `${change}`;
+async function fetchMindPriceNew() {
+	try {
+		const response = await fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt');
+		if (response.ok) {
+			const json = await response.json();
+			const newPrice = json.data.new_price;
+			const change = parseFloat(json.data.change);
 
-      // Set the color based on the value of change
-      if (change >= 0) {
-        changeElement.style.color = 'green';
-      } else {
-        changeElement.style.color = 'red';
-      }
-    })
-    .catch(error => console.error('Error fetching data:', error));
+			// Update the HTML content
+			document.querySelector('#priceValue2').textContent = `${newPrice}`;
+			const changeElement = document.querySelector('#changeValue2');
+			changeElement.textContent = `${change}`;
 
+			// Set the color based on the value of change
+			if (change >= 0) {
+				changeElement.style.color = 'green';
+			} else {
+				changeElement.style.color = 'red';
+			}
+		} else {
+			console.error('Failed to fetch price:', response.status);
+		}
+	} catch (error) {
+		console.error('Error fetching data:', error);
+	}
+}
+
+fetchMindPriceNew();
+setInterval(fetchMindPriceNew, 5000);
 
 
 // wallet copy 
@@ -266,10 +287,34 @@ function UsdtDepositWallet() {
 
 	// BMIND Section
 
+	function bmindDepositWallet() {
+	    const select = document.getElementById('selectBmindDepositAddress');
+	    const input = document.getElementById('bmindDepositAddress');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyBmindDepositWallet(event) {
+        var walletInput = document.getElementById("bmindDepositAddress");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
 	
+		var copyIcon = document.querySelector('.copy-bmind-depo-wall');
+		var clipboardIcon = document.querySelector('.clipboard-bmind-depo-wall');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
 	function bmindWithdrawWallet() {
-	    const select = document.getElementById('selectBmindWithdrawWallet');
-		
+	    const select = document.getElementById('selectBmindWithdrawAddress');
 	    const input = document.getElementById('bmindWithdrawAddress');
 	    console.log(input);
 	    input.value = select.value;
@@ -284,6 +329,116 @@ function UsdtDepositWallet() {
 	
 		var copyIcon = document.querySelector('.copy-bmind-with-wall');
 		var clipboardIcon = document.querySelector('.clipboard-bmind-with-wall');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
+
+	// MUSD Section
+
+	function musdDepositWallet() {
+	    const select = document.getElementById('selectMusdDepositAddress');
+	    const input = document.getElementById('musdDepositAddress');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyMusdDepositWallet(event) {
+        var walletInput = document.getElementById("musdDepositAddress");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
+	
+		var copyIcon = document.querySelector('.copy-musd-depo-wall');
+		var clipboardIcon = document.querySelector('.clipboard-musd-depo-wall');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
+	function musdWithdrawWallet() {
+	    const select = document.getElementById('selectMusdWithdrawAddress');
+	    const input = document.getElementById('musdWithdrawAddress');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyMusdWithdrawWallet(event) {
+        var walletInput = document.getElementById("musdWithdrawAddress");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
+	
+		var copyIcon = document.querySelector('.copy-musd-with-wall');
+		var clipboardIcon = document.querySelector('.clipboard-musd-with-wall');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
+	
+	// Mind Section
+
+	function mindDepositWallet() {
+	    const select = document.getElementById('selectMindDepositAddress');
+	    const input = document.getElementById('mindDepositAddress');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyMindDepositWallet(event) {
+        var walletInput = document.getElementById("mindDepositAddress");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
+	
+		var copyIcon = document.querySelector('.copy-mind-depo-wall');
+		var clipboardIcon = document.querySelector('.clipboard-mind-depo-wall');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
+	function mindWithdrawWallet() {
+	    const select = document.getElementById('selectMindWithdrawAddress');
+	    const input = document.getElementById('mindWithdrawAddress');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyMindWithdrawWallet(event) {
+        var walletInput = document.getElementById("mindWithdrawAddress");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
+	
+		var copyIcon = document.querySelector('.copy-mind-with-wall');
+		var clipboardIcon = document.querySelector('.clipboard-mind-with-wall');
 		copyIcon.style.display = 'none';
 		clipboardIcon.style.display = 'inline';
 	
