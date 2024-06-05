@@ -224,6 +224,18 @@ svg{
 .st-wallet-list .st-wallet-titel svg{
     display: none;
 }
+.st-wallet-list .st-com button{
+    padding: 5px 10px;
+}
+.st-wallet-list .st-com .joinNow{
+    padding: 5px 13px;
+}
+.st-wallet-list .st-com .coupon{
+    padding: 5px;
+}
+.st-wallet-list .st-com .transfer{
+    padding: 5px 4px;
+}
 #countdown{
     margin: 20px 80px;
     margin-bottom: 5px;

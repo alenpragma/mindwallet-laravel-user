@@ -1142,11 +1142,17 @@ margin-right: 30px;
     padding-top: 10px;
 }
 .st-wallet-list .st-com button{
-    padding: 5px 10px;
+    padding: 5px 20px;
     background: #635BFE;
     border: none;
     border-radius: 4px;
     margin-bottom: 2px;
+}
+.st-wallet-list .st-com .joinNow{
+    padding: 5px 21px;
+}
+.st-wallet-list .st-com .coupon{
+    padding: 5px 10px;
 }
 .st-wallet-list .wallet-single-name img{
     width: 30px;
@@ -4029,12 +4035,12 @@ th.fc-day-header.fc-widget-header {
     align-items: center;
     margin-left: 10px;
 }
-.copy-icon, .clipboard-icon, .copy-usdt-depo-wall, .clipboard-usdt-depo-wall, .copy-usdt-with-wall, .clipboard-usdt-with-wall{
+.copy-icon, .clipboard-icon, .copy-usdt-depo-wall, .clipboard-usdt-depo-wall, .copy-usdt-with-wall, .clipboard-usdt-with-wall, .copy-bmind-depo-wall, .clipboard-bmind-depo-wall, .copy-bmind-with-wall, .clipboard-bmind-with-wall, .copy-musd-depo-wall, .clipboard-musd-depo-wall, .copy-musd-with-wall, .clipboard-musd-with-wall, .copy-mind-depo-wall, .clipboard-mind-depo-wall, .copy-mind-with-wall, .clipboard-mind-with-wall {
     font-size: 16px;
     margin-top: -15px !important;
     display: none;
 }
-.copy-icon, .copy-usdt-depo-wall {
+.copy-icon, .copy-usdt-depo-wall, .copy-usdt-with-wall, .copy-bmind-depo-wall,  .copy-bmind-with-wall, .copy-musd-depo-wall, .copy-musd-with-wall, .copy-mind-depo-wall, .copy-mind-with-wall {
     display: inline;
 }
 .hidden-input {
@@ -4065,7 +4071,9 @@ th.fc-day-header.fc-widget-header {
 #mind-sec .mindp{
     text-align: center !important;
 }
-
+.np{
+    padding-bottom:0 !important;
+}
 .modal-content{
     background-color: #1A1721;
     border: 1px solid #007478;
@@ -4110,4 +4118,15 @@ th.fc-day-header.fc-widget-header {
 .m-stake .form-group{
     display: flex !important;
     border: 1px solid #0d404e;
+}
+
+#joinElite{
+    text-align: start;
+}
+#joinElite .close{
+    background: none;
+}
+#joinElite .btn-danger{
+    background-color: #d9534f;
+    border-color: #d43f3a;
 }
