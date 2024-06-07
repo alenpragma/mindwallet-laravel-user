@@ -258,32 +258,32 @@ function UsdtDepositWallet() {
 
 
 
-	function UsdtWithdrawWallet() {
-	    const select = document.getElementById('selectUsdtWithdrawWallet');
+	// function UsdtWithdrawWallet() {
+	//     const select = document.getElementById('selectUsdtWithdrawWallet');
 		
-	    const input = document.getElementById('usdtWithdrawAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyUsdtWithdrawWallet(event) {
-        var walletInput = document.getElementById("usdtWithdrawAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
+	//     const input = document.getElementById('usdtWithdrawAddress');
+	//     console.log(input);
+	//     input.value = select.value;
+	// }
+	// function copyUsdtWithdrawWallet(event) {
+    //     var walletInput = document.getElementById("usdtWithdrawAddress");
+    //     walletInput.select();
+    //     walletInput.setSelectionRange(0, 99999);
+	// 	event.preventDefault();
+	// 	hiddenInput.select();
+	// 	document.execCommand('copy');
 	
-		var copyIcon = document.querySelector('.copy-usdt-with-wall');
-		var clipboardIcon = document.querySelector('.clipboard-usdt-with-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
+	// 	var copyIcon = document.querySelector('.copy-usdt-with-wall');
+	// 	var clipboardIcon = document.querySelector('.clipboard-usdt-with-wall');
+	// 	copyIcon.style.display = 'none';
+	// 	clipboardIcon.style.display = 'inline';
 	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
+	// 	setTimeout(() => {
+	// 		clipboardIcon.style.display = 'none';
+	// 		copyIcon.style.display = 'inline';
+	// 	}, 1000);
 
-    }
+    // }
 
 	// BMIND Section
 
