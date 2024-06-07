@@ -1234,49 +1234,33 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                <button type="button" data-toggle="modal" data-target="#usdtStake" data-whatever="" class="btn btn-sm stake text-capitalize">
-                                                <span>Stake</span></button>
-                                                <div class="modal stake-modal fade" id="usdtStake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <button type="button" style="padding: 5px !important;" data-toggle="modal" data-target="#usdtTransfer" data-whatever="" class="btn btn-sm stake text-capitalize">
+                                                <span>Transfer</span></button>
+                                                <div class="modal stake-modal fade" id="usdtTransfer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
                                                       <div class="modal-content">
                                                         <div class="modal-header">
-                                                          <h5 class="modal-title">USDT Stake</h5>
+                                                          <h5 class="modal-title">USDT Transfer</h5>
                                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                           </button>
                                                         </div>
                                                         
-                                                        <div class="modal-body m-stake">
+                                                        <div class="modal-body">
                                                             <form>
-                                                              <div class="form-group d-flex">
-                                                                <label for="usdtAvlBal" class="col-form-label">Available Balance ($)</label>
-                                                                <input type="text" class="form-control" disabled id="usdtAvlBal" value="$500.0000">
-                                                              </div>
-                                                              <div class="form-group">
-                                                                  <label for="usdtStakePrice" class="col-form-label">USDT Price ($)</label>
-                                                                  <input type="text" class="form-control" disabled id="bmindStakePrice" value="0.4154">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                  <label for="usdt-amount-stake" class="col-form-label">Quantity (USDT)</label>
-                                                                  <input type="text" class="form-control" id="usdt-amount-stake">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                  <label for="usdt-tv-stake" class="col-form-label">Total Values ($)</label>
-                                                                  <input type="text" class="form-control" disabled id="usdt-tv-stake">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="usdt-tv-stake" class="col-form-label">Saaking Fee (%)</label>
-                                                                    <input type="text" class="form-control" disabled id="usdt-tv-stake">
-                                                                  </div>
                                                                   <div class="form-group">
-                                                                    <label for="usdt-tv-stake" class="col-form-label">Payable ($)</label>
-                                                                    <input type="text" class="form-control" disabled id="usdt-tv-stake">
+                                                                    <div class="form-group">
+                                                                      <label for="usdt-fund-transfer" class="col-form-label">Fund Transfer To</label>
+                                                                      <input type="text" class="form-control" id="usdt-fund-transfer">
+                                                                    </div>
+                                                                    <label for="usdt-amount-transfer" class="col-form-label">Amount (USDT)</label>
+                                                                    <input type="number" class="form-control" id="usdt-amount-transfer" required pattern="[0-9]*" min="1" max="500000">
                                                                   </div>
-                                                            </form>
+                                                              </form>
                                                         </div>
                                                         <div class="modal-footer">
                                                           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                                          <button type="button" class="btn btn-primary">Stake</button>
+                                                          <button type="button" class="btn btn-primary">Transfer</button>
                                                         </div>
                                                       </div>
                                                     </div>
