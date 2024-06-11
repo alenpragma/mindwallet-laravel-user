@@ -28,6 +28,9 @@ a:visited, a:link, a:active {
 a:active, a:hover {
   outline: 0 none;
 }
+.d-flex{
+    display: flex;
+}
 ul{
 list-style: outside none none;
 margin: 0;
@@ -1166,9 +1169,12 @@ margin-right: 30px;
 .counter{
     padding: 20px 0;
 }
-.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-nalika-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single{
+.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .transaction-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-nalika-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single{
 	padding:20px;
 	/* background:#1b2a47; */
+}
+.transaction-status-wrap{
+    padding: 0 20px ;
 }
 .graph-rp{
 	text-align:right;
@@ -1570,47 +1576,80 @@ ul.two-part-sp li{
 	padding-top: 30px;
     padding-bottom: 30px;
 }
-.product-status-wrap h4 {
+.transaction-status-wrap{
+    overflow-x: scroll;
+}
+.transaction-status-wrap h4 {
     font-size: 20px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.product-status-wrap table {
+.transaction-status-wrap table {
     width: 100%;
+    border-radius: 15px;
+    background-color:#2E293A;
+    ;
 }
-.product-status-wrap table th {
-    padding: 20px 5px;
+table thead{
+    background-color: #635BFE;
+}
+.transaction-status-wrap table thead tr th, .transaction-status-wrap table tbody tr td{
+    padding: 20px;
+}
+table th:first-child{
+    border-radius:15px 0 0 0;
+  }
+  
+  table th:last-child{
+    border-radius:0 15px 0 0;
+  }
+.transaction-status-wrap table th {
     vertical-align: top;
     border-top: 1px solid #152036;
 }
-.product-status-wrap table th {
+.transaction-status-wrap table th {
     vertical-align: bottom;
     border-bottom: 2px solid #152036;
 	color:#fff;
 }
-.product-status-wrap th, .product-status-wrap td {
+.transaction-status-wrap th, .transaction-status-wrap td {
     padding: 10px;
     text-align: left;
     font-size: 14px;
 }
-.product-status-wrap table td {
+.transaction-status-wrap table td {
     padding: 9px 7px;
-    border-top: 1px solid #152036;
+    border-top: 1px solid #ffffff;
 	color:#fff;
 	font-size:14px;
 }
-.product-status-wrap img {
+.transaction-status-wrap img {
     width: 60px;
 }
-.custom-pagination ul.pagination li a{
-	color: #fff;
-	background-color: #152036;
-    border: 1px solid #152036;
+.custom-pagination{
+    
+    float: right;
+}
+
+.custom-pagination ul.pagination li:first-child a,
+.custom-pagination ul.pagination li:last-child a {
+    border: none;
+    margin: 0;
+}
+.custom-pagination ul.pagination li a {
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin: 0 7px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
 }
 .custom-pagination ul.pagination{
 	margin-bottom: 0px;
 }
-.product-status-wrap .pd-setting {
+.transaction-status-wrap .pd-setting {
     border: none;
     color: #fff;
     padding: 5px 15px;
@@ -1618,7 +1657,7 @@ ul.two-part-sp li{
     background: #24caa1;
     border-radius: 3px;
 }
-.product-status-wrap .ps-setting {
+.transaction-status-wrap .ps-setting {
     border: none;
     color: #fff;
     padding: 5px 15px;
@@ -1626,7 +1665,7 @@ ul.two-part-sp li{
     background: #2eb7f3;
     border-radius: 3px;
 }
-.product-status-wrap .ds-setting {
+.transaction-status-wrap .ds-setting {
     border: none;
     color: #fff;
     padding: 5px 15px;
@@ -2221,7 +2260,7 @@ ul.tab-custon-design li.active a, ul.tab-review-design li.active a{
     background: #1b2a47;
     padding: 20px 20px;
 }
-.product-status-wrap.border-pdt-ct p{
+.transaction-status-wrap.border-pdt-ct p{
 	font-size:14px;
 	color:#fff;
 }
@@ -2400,11 +2439,11 @@ ul.tab-custon-design li.active a, ul.tab-review-design li.active a{
 .wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
     background: #152036;
 }
-.product-list-cart .product-status-wrap{
+.product-list-cart .transaction-status-wrap{
 	border: 0px solid rgba(0,0,0,.12);
 	padding:0px;
 }
-.product-list-cart .product-status-wrap table th{
+.product-list-cart .transaction-status-wrap table th{
 	border: 0px solid rgba(0,0,0,.12);
 }
 .product-list-cart h3{
@@ -2479,7 +2518,7 @@ ul.tab-custon-design li.active a, ul.tab-review-design li.active a{
 .product-cart-dn {
     display: none;
 }
-.product-status-wrap.border-pdt-ct{
+.transaction-status-wrap .border-pdt-ct{
 	box-shadow:none;
 }
 .product-payment-inner-st{

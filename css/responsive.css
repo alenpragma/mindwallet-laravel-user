@@ -145,6 +145,7 @@ svg{
     display: none;
 }
 
+
 }
 
  
@@ -214,12 +215,18 @@ svg{
 .header-right-info ul.header-right-menu li .author-log {
     margin-left: 15px !important;
 }
+st-wallet-list .row{
+    margin-right: -18px !important;
+    margin-left: -19px !important;
+}
 .st-wallet-list .st-wallet-titel .d-flex{
     display: flex;
     font-size: 10px !important;
 }
 .st-wallet-list .st-wallet-titel img{
-    display: none;
+    /* display: none; */
+    height: 20px;
+    width: 20px;
 }
 .st-wallet-list .st-wallet-titel svg{
     display: none;
@@ -407,6 +414,10 @@ svg{
 }
 .mind-live-price{
     display: block;
+}
+.transaction-table table{
+    width: 100%;
+    min-width: 800px;
 }
 }
  
