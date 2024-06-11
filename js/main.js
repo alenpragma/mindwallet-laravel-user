@@ -165,65 +165,41 @@ function toggleSidebar() {
 
 
 async function fetchMindPrice() {
-	try {
-		const response = await fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt');
-		if (response.ok) {
-			const json = await response.json();
-			const newPrice = json.data.new_price;
-			const change = parseFloat(json.data.change);
+    try {
+        const response = await fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt');
+        if (response.ok) {
+            const json = await response.json();
+            const newPrice = json.data.new_price;
+            const change = parseFloat(json.data.change);
+            // Update the HTML content in all relevant places
+            document.querySelectorAll('.priceValue').forEach(el => {
+                el.textContent = newPrice;
+            });
+            document.querySelectorAll('.changeValue').forEach(el => {
+                el.textContent = change;
 
-			// Update the HTML content
-			document.querySelector('#priceValue').textContent = `${newPrice}`;
-			const changeElement = document.querySelector('#changeValue');
-			changeElement.textContent = `${change}`;
 
-			// Set the color based on the value of change
-			if (change >= 0) {
-				changeElement.style.color = 'green';
-			} else {
-				changeElement.style.color = 'red';
-			}
-		} else {
-			console.error('Failed to fetch price:', response.status);
-		}
-	} catch (error) {
-		console.error('Error fetching data:', error);
-	}
+				document.querySelectorAll('.priceValue').forEach(el => {
+					el.value = newPrice;
+				});
+
+                // Set the color based on the value of change
+                if (change >= 0) {
+                    el.style.color = 'green';
+                } else {
+                    el.style.color = 'red';
+                }
+            });
+        } else {
+            console.error('Failed to fetch price:', response.status);
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 }
 
 fetchMindPrice();
 setInterval(fetchMindPrice, 5000);
-
-
-async function fetchMindPriceNew() {
-	try {
-		const response = await fetch('https://mindchain.info/Api/Index/singlemarketInfo/market/mind_usdt');
-		if (response.ok) {
-			const json = await response.json();
-			const newPrice = json.data.new_price;
-			const change = parseFloat(json.data.change);
-
-			// Update the HTML content
-			document.querySelector('#priceValue2').textContent = `${newPrice}`;
-			const changeElement = document.querySelector('#changeValue2');
-			changeElement.textContent = `${change}`;
-
-			// Set the color based on the value of change
-			if (change >= 0) {
-				changeElement.style.color = 'green';
-			} else {
-				changeElement.style.color = 'red';
-			}
-		} else {
-			console.error('Failed to fetch price:', response.status);
-		}
-	} catch (error) {
-		console.error('Error fetching data:', error);
-	}
-}
-
-fetchMindPriceNew();
-setInterval(fetchMindPriceNew, 5000);
 
 
 // wallet copy 
@@ -255,35 +231,6 @@ function UsdtDepositWallet() {
 		}, 1000);
 
     }
-
-
-
-	// function UsdtWithdrawWallet() {
-	//     const select = document.getElementById('selectUsdtWithdrawWallet');
-		
-	//     const input = document.getElementById('usdtWithdrawAddress');
-	//     console.log(input);
-	//     input.value = select.value;
-	// }
-	// function copyUsdtWithdrawWallet(event) {
-    //     var walletInput = document.getElementById("usdtWithdrawAddress");
-    //     walletInput.select();
-    //     walletInput.setSelectionRange(0, 99999);
-	// 	event.preventDefault();
-	// 	hiddenInput.select();
-	// 	document.execCommand('copy');
-	
-	// 	var copyIcon = document.querySelector('.copy-usdt-with-wall');
-	// 	var clipboardIcon = document.querySelector('.clipboard-usdt-with-wall');
-	// 	copyIcon.style.display = 'none';
-	// 	clipboardIcon.style.display = 'inline';
-	
-	// 	setTimeout(() => {
-	// 		clipboardIcon.style.display = 'none';
-	// 		copyIcon.style.display = 'inline';
-	// 	}, 1000);
-
-    // }
 
 	// BMIND Section
 
