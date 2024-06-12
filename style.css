@@ -28,9 +28,6 @@ a:visited, a:link, a:active {
 a:active, a:hover {
   outline: 0 none;
 }
-.d-flex{
-    display: flex;
-}
 ul{
 list-style: outside none none;
 margin: 0;
@@ -1169,12 +1166,12 @@ margin-right: 30px;
 .counter{
     padding: 20px 0;
 }
-.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .transaction-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-nalika-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single{
+.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .review-tab-pro-inner, .income-dashone-total, .analytics-nalika-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single{
 	padding:20px;
 	/* background:#1b2a47; */
 }
 .transaction-status-wrap{
-    padding: 0 20px ;
+    padding: 0 ;
 }
 .graph-rp{
 	text-align:right;
@@ -1576,7 +1573,7 @@ ul.two-part-sp li{
 	padding-top: 30px;
     padding-bottom: 30px;
 }
-.transaction-status-wrap{
+.transaction-status-wrap .transaction-table{
     overflow-x: scroll;
 }
 .transaction-status-wrap h4 {
