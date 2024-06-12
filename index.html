@@ -951,7 +951,7 @@
                                                               </div>
                                                               <div class="form-group">
                                                                   <label for="musdStakePrice" class="col-form-label">MIND Price ($)</label>
-                                                                  <input type="text" class="form-control" disabled id="musdStakePrice" value="0.4154">
+                                                                  <input type="text" class="form-control priceValue" disabled id="musdStakePrice" value="">
                                                                 </div>
                                                                 <div class="form-group">
                                                                   <label for="musd-amount-stake" class="col-form-label">Quantity (MIND)</label>
@@ -1326,7 +1326,7 @@
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-2 col-sm-2">
                                                                         <div class="wallet-st">
-                                                                            <p class="text-capitalize text-left">Locked </p>
+                                                                            <p class="text-capitalize text-left">Locked Balance</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-2 col-sm-2">
@@ -1601,16 +1601,56 @@
 		============================================  -->
                             <div class="buyMindWallet">
                                 <div class="static-table-area mg-t-15">
-                                    <div class="buyMindHeader row">
-                                        <div class="col-sm-4">
+                                    <div class="buyMindHeader row mg-b-15">
+                                        <div class="col-sm-6">
                                             <h4 class="text-left">Buy MIND</h4>
                                         </div>
-                                        <div class="col-sm-8 d-flex text-left">
-                                            <p>Available Balance ($)</p>
-                                            <p>$892748</p>
+                                        <div class="col-sm-6 d-flex text-right mind-price">
+                                            <p class="text-right">Available Balance ($)</p>
+                                            <p class="text-right mind-priceAmount">$892748</p>
                                         </div>
                                     </div>
-                                    
+                                    <form>
+                                            <div class="form-group">
+                                              <label for="selectBuyMindAddress" class="col-form-label text-left">Select Wallet</label>
+                                              <select class="form-select form-control" id="selectBuyMindAddress" aria-label="Default select example">
+                                                <option selected>Choose MUSD Wallet</option>
+                                                <option value="dvvaergvSGDgawrg">dvvaergvSGDgawrg</option>
+                                                <option value="sgrgwetgWEFWARG">sgrgwetgWEFWARG</option>
+                                                <option value="eyahrwgawrtargaer">eyahrwgawrtargaer</option>
+                                              </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="buyMindQuantity" class="col-form-label text-left">Quantity MIND ($):</label>
+                                                <input type="text" class="form-control" id="buyMindQuantity" required placeholder="00.00">
+                                              </div>
+                                    </form>
+                                    <div class="row valueSec">
+                                        <div class="col-sm-6">
+                                            <div class="">
+                                                <p class="totalValue">Total Value ($):</p>
+                                                <p class="totalAmount">43523547</p>
+                                            </div>
+                                            <div>
+                                                <p class="payable">Payable ($):</p>
+                                                <p class="payableAmount">43523547</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div>
+                                                <p class="mindPrice">Mind Price ($):</p>
+                                                <p class="priceValue mindPriceAmount"></p>
+                                            </div>
+                                            <div>
+                                                <p class="buyingFee">Buying Fee(%):</p>
+                                                <p class="buyingFee">43523547</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button>Buy <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.7071 8.7071C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.92893C18.9526 0.538406 18.3195 0.538406 17.9289 0.928931C17.5384 1.31946 17.5384 1.95262 17.9289 2.34314L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.7071ZM8.74228e-08 9L25 9L25 7L-8.74228e-08 7L8.74228e-08 9Z" fill="white"/>
+                                        </svg>
+                                        </button>
                                 </div>
                             </div>
                             
