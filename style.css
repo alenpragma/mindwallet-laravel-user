@@ -569,6 +569,40 @@ ul.message-menu li .message-img{
 .breadcome-heading {
     margin: 14px 0px;
 }
+.transection-search{
+    margin: 14px 0px;
+    float: right;
+    margin-top: -8px;
+}
+
+.transection-search .form-control, .transection-search .form-control:focus {
+    border: 1px solid #CECECE;
+    font-size: 13px;
+    height: 34px;
+    color: #A9A9A9;
+    padding-left: 20px;
+    padding-right: 40px;
+    background: none;
+    box-shadow: none;
+    border-radius: 10px;
+    width: 200px;
+	transition:all .4s ease 0s;
+}
+.transection-search .form-control:focus, .transection-search .form-control:active {
+    border: 1px solid #24caa1;
+}
+.transection-search a {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    width: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -17px;
+}
 ul.notification-menu li .notification-icon{
 	float: left;
     width: 50px;
@@ -843,6 +877,7 @@ ul.setting-panel-list li{
 .breadcome-heading .form-control:focus, .breadcome-heading .form-control:active {
     border: 1px solid #24caa1;
 }
+
 .nalika-angle-dw {
     font-size: 14px;
     position: relative;
@@ -4242,4 +4277,51 @@ th.fc-day-header.fc-widget-header {
 }
 .text-right{
     text-align: right;
+}
+.data-target{
+    display: flex;
+    text-align: left;
+}
+.data-target select{
+    background: none;
+    height: 22px;
+    border-radius: 3px;
+    margin: 0 4px;
+    border: .5px solid #FF971D;
+}
+.data-target option{
+    padding: 0;
+    background: #1A1721;
+}
+.page-top-section{
+    display: flex;
+    text-align: left;
+    margin: 10px;
+}
+.page-top-section .breadcome-price-section{
+    display: flex;
+    text-align: right;
+    align-items: end;
+    width: 216px;
+    float: right;
+    margin-top: 20px;
+}
+.page-top-section .breadcome-section-name, .page-top-section .breadcome-section-price{
+    border-bottom: 1px solid  #FF971D;
+    padding: 0 5px;
+}
+.page-top-section .breadcome-section-price{
+    color: #FF971D;
+}
+.page-section-btn{
+    margin-left: 15px;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    float: left;
+}
+.page-section-btn button{
+    background:  #FF971D;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
 }
