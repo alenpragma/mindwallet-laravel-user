@@ -4325,3 +4325,91 @@ th.fc-day-header.fc-widget-header {
     padding: 10px 18px;
     border-radius: 5px;
 }
+.profile-status-wrap .profile-sec{
+    padding:10px 20px;
+}
+.profile-data-warp .dp-img{
+    width: 25%;
+}
+.profile-data-warp .dp-img img{
+    height: 124px;
+    width: 121px;
+    margin-bottom: 5px;
+}
+.profile-data-warp .profile-details{
+    width: 75%;
+    margin-top: 10px;
+}
+.profile-data-warp{
+    display:flex;
+}
+.profile-data .prof-url{
+    margin-left: 0;
+}
+.profile-data .prof-url .copy-button{
+    margin-top: 10px;
+}
+.role .rank-icon{
+    display: flex;
+    padding-bottom: 12px;
+
+}
+.role .rank-icon img{
+    height: 80px;
+    
+}
+.profile-info{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info input{
+    height: 25px;
+    background: none;
+    box-shadow: none;
+    width: 250px;
+}
+.profile-info input:focus, .password-update input:focus{
+    box-shadow: none;
+}
+.profile-info input::placeholder, .password-update input::placeholder{
+    color: #fff;
+}
+.profile-info input:disabled, .password-update input:disabled{
+    background: none;
+}
+.profile-settings button{
+    background: #635BFE;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.password-update{
+    padding-bottom: 30px !important;
+}
+.password-update form{
+    margin-top: 30px;
+}
+.password-update label{
+    font-weight: 300;
+}
+.password-update input{
+    background: none;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1px solid #B8B8B8;
+    margin-bottom: 20px;
+}
+.password-update button{
+    background: #635BFE;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
