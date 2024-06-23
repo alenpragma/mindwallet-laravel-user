@@ -232,6 +232,33 @@ function UsdtDepositWallet() {
 
     }
 
+	function UsdtDepositWalletMenu() {
+	    const select = document.getElementById('selectUsdtDepositWalletMenu');
+		
+	    const input = document.getElementById('usdtDepositAddressMenu');
+	    console.log(input);
+	    input.value = select.value;
+	}
+	function copyUsdtDepositWalletMenu(event) {
+        var walletInput = document.getElementById("usdtDepositAddressMenu");
+        walletInput.select();
+        walletInput.setSelectionRange(0, 99999);
+		event.preventDefault();
+		hiddenInput.select();
+		document.execCommand('copy');
+	
+		var copyIcon = document.querySelector('.copy-usdt-depo-wall-menu');
+		var clipboardIcon = document.querySelector('.clipboard-usdt-depo-wall-menu');
+		copyIcon.style.display = 'none';
+		clipboardIcon.style.display = 'inline';
+	
+		setTimeout(() => {
+			clipboardIcon.style.display = 'none';
+			copyIcon.style.display = 'inline';
+		}, 1000);
+
+    }
+
 	// BMIND Section
 
 	function bmindDepositWallet() {
