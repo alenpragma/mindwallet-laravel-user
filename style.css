@@ -4413,3 +4413,118 @@ th.fc-day-header.fc-widget-header {
     align-items: center;
     border-radius: 5px;
 }
+
+
+/* auth section start  */
+.authinatication .auth-img-sec{
+    background: #1A1721;
+    padding: 130px 60px;
+}
+.authinatication .auth-data{
+    background: #25212F;
+    padding:60px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+}
+.authinatication .auth-data a{
+    color: #FCF98B;
+}
+.authinatication .auth-data a:hover{
+    color: #00FFF2;
+}
+.authinatication .social-icons{
+    width: 50%;
+    margin: auto;
+}
+.authinatication .social-icons ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.authinatication .social-icons ul li a i{
+    font-size: 25px;
+    color: #fff;
+}
+.authinatication .social-icons ul li a i:hover{
+    color: #635BFE;
+}
+.authinatication .auth-data .auth-logo-sec img{
+    width: 300px;
+}
+.authinatication .auth-data .auth-heading h5{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.auth-data form .form-group{
+    margin-bottom: 0;
+}
+.auth-data form label{
+    font-weight: 300;
+}
+.auth-data form label span{
+    color: red;
+}
+.auth-data form input{
+    padding-left: 40px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid #B8B8B8
+}
+.auth-data form input::placeholder{
+    color: #A8A8A8;
+    background: none;
+}
+.auth-data form input:disabled{
+    background: none;
+}
+.auth-data form .d-flex{
+    display: flex;
+}
+.auth-data form .checkbox{
+    margin-top: 0 ;
+    margin-right:15px;
+    width: 18px;
+    height: 18px;
+}
+.auth-data form svg{
+    margin-top: -62px;
+    margin-left: 10px;
+}
+.auth-data button{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background: #635BFE;
+    border-radius: 10px;
+    border: 1px solid #635BFE;
+
+}
+.authinatication .auth-left-sign-in{
+    padding: 80px 60px;
+}
+.authinatication .auth-sign-in{
+    padding:110px 60px;
+}
+.auth-data .signin-content{
+    margin-top: 10px;
+}
+.auth-data .forget-password{
+    margin-top: -15px;
+    margin-right: 5px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.authinatication .auth-left-forget-pass{
+    padding: 45px 60px;
+}
+.authinatication .auth-forget-pass{
+    padding:140px 60px;
+}
+.authinatication .auth-left-reset-pass{
+    padding: 45px 60px;
+}
+.authinatication .auth-reset-pass{
+    padding:100px 60px;
+}

@@ -453,6 +453,15 @@ st-wallet-list .row{
 .profile-data .prof-url{
     margin-top: -20px ;
 }
+.authinatication .auth-data{
+    padding:40px;
+}
+.auth-left-side{
+    display: none;
+}
+.authinatication .auth-forget-pass{
+    padding:80px 40px;
+}
 }
  
 /* Large Mobile :480px. */
