@@ -4528,3 +4528,66 @@ th.fc-day-header.fc-widget-header {
 .authinatication .auth-reset-pass{
     padding:100px 60px;
 }
+
+
+.bmind-top .breadcome-price-section{
+    float: left;
+}
+.bmind-page-staus p, .bmind-page-staus label{
+    color:#CECECE;
+    font-weight: 400;
+}
+.bmind-page-staus .bmind-card .card-box{
+    display: flex;
+    border: 1px solid #635BFE;
+    border-bottom: 3px solid #635BFE;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bmind-page-staus .stage-title{
+    margin-left: 20px;
+}
+.bmind-page-staus .bmind-card .card-box .card-content{
+    margin-left: 10px;
+}
+.bmind-stage-list .card-content{
+    margin-top: 50px;
+}
+.bmind-stage-list .card-box{
+    border: 1px solid #635BFE;
+    margin: 10px;
+    border-radius: 10px;
+}
+.bmind-stage-list .card-box .bmind-btn{
+    background: #FF971D;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.bmind-stage-list .card-box .bmind-btn:hover{
+    background: #FF975d;
+}
+.bmind-stage-list .card-content form .form-group{
+    display: flex;
+    padding: 5px 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+}
+.bmind-stage-list .card-content form .form-group label{
+    margin-top: -5px;
+}
+.bmind-stage-list .card-content form .form-group input{
+    width: 23%;
+    background: none;
+    border: none;
+    height: 30px;
+    margin-top: -10px;
+}
+.bmind-stage-list .card-content form .form-group .token-amount{
+    border: 1px solid #FF971D;
+    width: 15%;
+    margin-right: 45px;
+    border-radius: 3px;
+}
