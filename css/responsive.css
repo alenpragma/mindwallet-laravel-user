@@ -480,12 +480,19 @@ st-wallet-list .row{
 .bmind-page-staus .bmind-card .card-box img{
     width: 40px;
 }
-.bmind-stage-list .card-content form .form-group input{
+.bmind-stage-list .card-content form .form-group input, .earn-packege-list .card-content form .form-group input{
     width: 35%;
 }
-.bmind-stage-list .card-content form .form-group .token-amount{
+.bmind-stage-list .card-content form .form-group .token-amount, .earn-packege-list .card-content form .form-group .token-amount{
     margin-right: 20px;
     width: 25%;
+}
+.earn-packege-list .card-content form .form-group select{
+    width: 30%;
+    margin-right: 5px;
+}
+.earn-page-staus .col-lg-6{
+    margin-left: 0px;
 }
 }
  
@@ -522,6 +529,10 @@ st-wallet-list .row{
     }
     .bmind-page-staus .bmind-card .card-box img {
         width: 17px;
+    }
+    .earn-packege-list .card-content form .form-group select{
+        width: 35%;
+        margin-right: 0;
     }
 }
  
