@@ -1,3 +1,29 @@
+@media (min-width: 1400px) and (max-width: 1920px) {
+    .elite-club-section .inner-image{
+        margin-top: -106%;
+        height: 608px;
+    }
+    .elite-club-section .elite-content-card{
+        padding-bottom: 28%;
+    }
+    .elite-club-section .elite-content-card2{
+        padding-bottom: 2%;
+    }
+    .elite-club-section .elite-content-card3{
+        padding-bottom: 20px;
+    }
+    .elite-club-section .elite-content-card4{
+        padding-bottom: 30px;
+    }
+    .elite-club-section .trams{
+        width: 67%;
+    }
+    .elite-club-section .trams-inner{
+        margin-top: -103%;
+        width: 50%;
+        height: 20%;
+    }
+}
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
 .admin {
@@ -70,7 +96,18 @@ svg{
 .mind-sec .mindn, .mind-sec .pricem {
     font-size: 10px;
 }
-
+.elite-club-section .inner-image{
+    margin-top: -110%;
+    height: 730px;
+}
+.right-arrow{
+    margin: 50px 10px;
+}
+.elite-club-section .trams-inner{
+    margin-top: -94%;
+    width: 100%;
+    height: -40% !important;
+}
 }
 
  
@@ -158,8 +195,27 @@ svg{
     margin-right: 18px;
     width: 25%;
 }
+.elite-club-section .inner-image{
+    margin-top: -127%;
+    height: 735px;
 }
-
+.elite-club-section .elite-icon{
+    padding-top: 100px;
+}
+.right-arrow{
+    margin: 50px 0;
+}
+.elite-club-section .trams-inner{
+    margin-top: -139%;
+    width: 100%;
+    height: 500px!important;
+}
+.elite-club-section .trams{
+    width: 100%;
+    padding-bottom: 30%;
+    margin: 0;
+}
+}
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
@@ -494,6 +550,22 @@ st-wallet-list .row{
 .earn-page-staus .col-lg-6{
     margin-left: 0px;
 }
+.payment-method-page{
+    display: inline-block;
+}
+.pay-button .page-button{
+    margin-left: -30px;
+}
+.elite-club-section .inner-image{
+    margin-top: -110%;
+}
+.down-arrow{
+    display: inline;
+    margin: 0% 45%;
+}
+.right-arrow{
+    display: none;
+}
 }
  
 /* Large Mobile :480px. */
@@ -518,6 +590,8 @@ st-wallet-list .row{
 .header-right-info .navbar-nav {
     left: 76px;
 }
+
+
 }
 @media only screen and (max-width: 375px) {
     .header-right-info .navbar-nav {
@@ -533,6 +607,10 @@ st-wallet-list .row{
     .earn-packege-list .card-content form .form-group select{
         width: 35%;
         margin-right: 0;
+    }
+    .elite-club-section .inner-image{
+        margin-top: -103%;
+        height: 350px;
     }
 }
  

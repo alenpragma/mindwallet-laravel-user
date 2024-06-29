@@ -4435,20 +4435,20 @@ th.fc-day-header.fc-widget-header {
 .authinatication .auth-data a:hover{
     color: #00FFF2;
 }
-.authinatication .social-icons{
+.social-icons{
     width: 50%;
     margin: auto;
 }
-.authinatication .social-icons ul{
+.social-icons ul{
     display: flex;
     text-align: center;
     justify-content: space-between;
 }
-.authinatication .social-icons ul li a i{
+.social-icons ul li a i{
     font-size: 25px;
     color: #fff;
 }
-.authinatication .social-icons ul li a i:hover{
+.social-icons ul li a i:hover{
     color: #635BFE;
 }
 .authinatication .auth-data .auth-logo-sec img{
@@ -4610,4 +4610,101 @@ th.fc-day-header.fc-widget-header {
 .earn-page-staus .col-lg-6{
     width: 50%;
     margin-left: 250px;
+}
+.payment-method .up-btn{
+    background: none;
+    border: none;
+}
+
+
+/* elite  club section  */
+
+.elite-club-section{
+    margin: 20px 30px;
+}
+.elite-club-section .elite-header{
+    background: linear-gradient(to right, #635BFE, #FF971D);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.elite-club-section .section-title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.elite-club-section .elite-content-card-img{
+    background: linear-gradient(to bottom, #635BFE, #EC9038);
+    border-radius: 10px;
+}
+.elite-club-section .elite-icon{
+    padding: 0 60px;
+    padding-top: 30px;
+    position: relative;
+}
+.elite-club-section .inner-image{
+    margin-top: -117%;
+    width: 100%;
+    height: 100%;
+}
+.elite-club-section .elite-content-card{
+    background: linear-gradient(to bottom left, #0A00AF, #CB7600);
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 26%;
+    justify-content: center;
+}
+.elite-club-section .elite-content-card-content svg{
+    margin-right: 6px;
+    width: 40px !important;
+}
+.elite-club-section .elite-content-card-content .bullet-point-sec .bullet-point-list{
+    display: flex;
+}
+.elite-club-section .elite-content-card-content .bullet-point-sec p{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0;
+    margin-right: 40px;
+}
+.elite-club-section .elite-content-card-content .bullet-point-sec b{
+    margin-right: 3px;
+}
+.elite-club-section .elite-content-card2{
+    padding-bottom: 2%;
+}
+.elite-club-section .elite-content-card3{
+    padding-bottom: 20px;
+}
+.elite-club-section .elite-content-card3 .elite-btn{
+    padding: 10px 40px;
+    background: #FF971D;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+.elite-club-section .elite-content-card3 p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.right-arrow{
+    display: inline;
+    margin: 40px 30px;
+}
+.down-arrow{
+    display: none;
+}
+.elite-club-section .trams{
+    width: 87%;
+    margin: 0% 10%;
+}
+.elite-club-section .trams-inner{
+    margin-top: -85%;
+    width: 100%;
+    height: 450px !important;
+}
+.elite-club-section .elite-content-card4{
+    padding-bottom: 20%;
+}
+.elite-club-section .elite-content-card4 .elite-content-card-content .bullet-point-sec p {
+    margin-right: 0;
 }
