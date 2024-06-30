@@ -502,9 +502,17 @@ st-wallet-list .row{
    .buyMindWallet .valueSec .col-sm-6:last-child{
        margin-left:0;
       }
-.page-top-section .row .breadcome-heading{
-        width:100px;
+.breadcome-price-section{
+        text-align: left !important;
+        align-items: start !important;
+        float: left !important;
       } 
+.page-top-section.col-sm-6{
+    width: 100% !important;
+}
+.page-top-section{
+    display: inline-block;
+}
 .transection-search form{
     margin-top: -30px;
 }
@@ -565,6 +573,12 @@ st-wallet-list .row{
 }
 .right-arrow{
     display: none;
+}
+.musd-page-btn-sec .page-section-btn .col-sm-6 .btn-1{
+    margin-right: 30px;
+}
+.musd-page-btn-sec .page-section-btn .col-sm-6 .btn-2{
+    margin-left: 30px;
 }
 }
  

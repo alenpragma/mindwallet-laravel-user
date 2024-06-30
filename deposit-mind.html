@@ -474,188 +474,218 @@
         </div>
 
         <div class="section-admin container-fluid">
-            <div class="row admin text-center">
+            <div class="row admin ">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="admin-content res-mg-t-15 d-flex row justify-content-between">
 
                         <div class="row page-top-section">
                                 <!-- breadcome title Section  -->
                             <div class="col-sm-6 breadcome-heading">
-                                <h3>Profile Settings</h3>
+                                <h3>MIND Deposit History</h3>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class=" breadcome-price-section">
+                                    <p class="breadcome-section-name">Available Balance:</p>
+                                    <p class="breadcome-section-price">547284.7562</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row page-section-btn pay-button">
+                            <div class="col-sm-12">
+                                <button type="button" data-toggle="modal" data-target="#usdtDepositmenu" data-whatever=""  class="page-button">Pay Manually</button>
+                                <div class="modal withdraw-modal fade" id="usdtDepositmenu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">MIND Pay Manually</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                              <div class="form-group" data-section="11">
+                                                <label for="selectWallet11" class="col-form-label">Select Wallet</label>
+                                                <select class="form-select form-control" id="selectWallet11" aria-label="Default select example" required onchange="selectWallet(11)">
+                                                  <option selected disabled>choose Wallet</option>
+                                                  <option value="gsdfgrgwfgrettgadfgaer">MIND-20</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group" data-section="11">
+                                                  <label for="copyAddress11" class="col-form-label">Wallet Address</label>
+                                                  <input type="text" class="form-control" id="copyAddress11" readonly>
+                                                  <button class="copy-button" onclick="copyWallet(event, 11)">
+                                                      <i class="fa-solid fa-copy copy-icon"></i>
+                                                        <i class="fa-solid fa-clipboard clipboard-icon text-warning"></i>
+                                                      </button>
+                                                </div>
+                                                <div class="form-group" >
+                                                  <label for="usdt-amount-deposit" class="col-form-label">Amount (USDT)</label>
+                                                  <input type="text" class="form-control" id="usdt-amount-deposit">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="usdt-hash-deposit" class="col-form-label">Transaction Hash</label>
+                                                  <input type="text" class="form-control" id="usdt-hash-deposit">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                          <button type="button" class="btn btn-primary">Deposit</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                                 <!-- Profile section 
+                                 <!-- transection section 
          ============================================  -->
-                        <div class="profile-staus mg-t-30  mg-b-30">
+                        <div class="transection-staus mg-t-30  mg-b-30">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="profile-status-wrap">
+                                        <div class="transaction-status-wrap">
                                             <div class="row">
-                                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 mg-t-30">
-                                                    <div class="profile-data  profile-sec analysis-progrebar-ctn">
-                                                        <div class="profile-data-warp d-flex text-left">
-                                                            <div class="dp-img">
-                                                                <img class="img-fluid" src="img/img-icon/profile-icon.jpg" alt="" height="100px" width="80px">
-                                                            </div>
-                                                            <div class="profile-details">
-                                                                <h4>Mr. Aditya</h4>
-                                                                <p class="kyc-cont">KYC <span class="text-red">Unverified</span> </p>
-                                                                <div class="copy-container prof-url">
-                                                                    <p class="cp-url mg-t-15">Invite: <span class="invt text-lowercase" id="urlText"> my.mindchainwallet....r/ref?FERFWE3</span></p>
-                                                                    <button class="copy-button" onclick="copyURL()">
-                                                                    <i class="fa-solid fa-copy copy-icon"></i>
-                                                                        <i class="fa-solid fa-clipboard clipboard-icon text-warning"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <input type="text" id="hiddenInput" class="hidden-input" value="my.mindchainwallet.com/register">
-                                                    </div>
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
                                                 </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 mg-t-30">
-                                                    <div class="profile-sec analysis-progrebar-ctn role">
-                                                        <h4 class="text-left">Role</h4>
-                                                        <div class="rank-icon d-flex">
-                                                            <div class=" rank-ico ">
-                                                                <img class="" src="img/img-icon/ambassador.png" alt="">
-                                                            </div>
-                                                            <div class="rank-ico">
-                                                                <img class="" src="img/img-icon/CONSULTANT-01.png" alt="">
-                                                            </div>
-                                                            <div class=" rank-ico">
-                                                                <img class="" src="img/img-icon/elite.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 mg-t-30">
-                                                    <div class="profile-sec profile-settings analysis-progrebar-ctn">
-                                                        <div class="profile-info">
-                                                            <div class="name-title">
-                                                                Name:
-                                                            </div>
-                                                            <div class="name form-group">
-                                                                <input type="text" value="Aditya Joy" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="email-title">
-                                                                Email:
-                                                            </div>
-                                                            <div class="email-address form-group">
-                                                                <input type="email" disabled value="adityajoy@gmail.com" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="contact">
-                                                                Contact No:
-                                                            </div>
-                                                            <div class="contact-no form-group">
-                                                                <input type="number" value="8801234567899" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="nidorpassid">
-                                                                NID/Passport:
-                                                            </div>
-                                                            <div class="nidOrPassport form-group">
-                                                                <input type="text" value="A353453" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="address-title">
-                                                                Address:
-                                                            </div>
-                                                            <div class="address form-group">
-                                                                <input type="text" value="123, bazar road, Pankhaiya para" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="city-title">
-                                                                City:
-                                                            </div>
-                                                            <div class="city-name form-group">
-                                                                <input type="text" value="Khagrachhari" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="post-title">
-                                                                Postal Code:
-                                                            </div>
-                                                            <div class="postal-code form-group">
-                                                                <input type="number" value="4400" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="country-title">
-                                                                Country:
-                                                            </div>
-                                                            <div class="country-name form-group">
-                                                                <input type="text" value="Bangladesh" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="dob-title">
-                                                                Date of Birth:
-                                                            </div>
-                                                            <div class="date-of-birth form-group">
-                                                                <input type="date" value="1997-03-02" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="gender-title">
-                                                                Gender:
-                                                            </div>
-                                                            <div class="gender form-group">
-                                                                <input type="text" value="Male" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="profile-info">
-                                                            <div class="refferal-title">
-                                                                My Refferal Id:
-                                                            </div>
-                                                            <div class="refferal-id form-group">
-                                                                <input type="text" disabled value="aditya" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <button>Profile Update</button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 mg-t-30">
-                                                    <div class="profile-sec password-update analysis-progrebar-ctn">
-                                                        <div class="mg-t-30">
-                                                            <h5 class="text-left">Update Password</h5>
-                                                        </div>
-                                                        <form action="" class="text-left">
-                                                            <div class="form-group">
-                                                                <label for="email" class="col-form-label">Email</label>
-                                                                <input type="text" disabled class="form-control" value="adityajoy@gmail.com" id="email">
-                                                              </div>
-                                                              <div class="form-group">
-                                                                <label for="oldPassword" class="col-form-label">Old Password</label>
-                                                                <input type="password"  class="form-control" id="oldPassword">
-                                                              </div>
-                                                              <div class="form-group">
-                                                                <label for="newPassword" class="col-form-label">New Password</label>
-                                                                <input type="password"  class="form-control" id="newPassword">
-                                                              </div>
-                                                              <div class="form-group">
-                                                                <label for="confirmPassword" class="col-form-label">Re Type Password</label>
-                                                                <input type="password"  class="form-control" id="oldPassword">
-                                                              </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
                                                         </form>
-                                                        <button>Update Password</button>
                                                     </div>
+                                                    
                                                 </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Date & Time</th>
+                                                            <th>Amount</th>
+                                                            <th>Description</th>
+                                                            <th>Type</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>$0.55</td>
+                                                            <td>Deposit Manually for Elite Club</td>
+                                                            <td>Credit</td>
+                                                            <td>Rejected</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    <!-- Profile end section 
+                    <!-- transection Token Wallet section 
                     ============================================  -->
                     </div>
                 </div>           

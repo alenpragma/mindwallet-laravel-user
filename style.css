@@ -323,11 +323,15 @@ ul.dtl-social li a{
 /*  8. Scroll Area
 /*----------------------------------------*/
 .comment-scrollbar, .timeline-scrollbar, .messages-scrollbar, .project-list-scrollbar {
-    height: 580px;
+    height: 550px !important;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 60px !important;
 }
 .mCSB_outside+.mCSB_scrollTools {
     right: 0px;
     margin: 0px 0px;
+    margin-bottom: 20px;
 }
 .admintab-wrap.menu-setting-wrap.menu-setting-wrap-bg .mCSB_outside+.mCSB_scrollTools {
     right: -15px;
@@ -4065,11 +4069,23 @@ th.fc-day-header.fc-widget-header {
 .mini-navbar #sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle{
 	width: 200px;
     left: 80px;
-    position: absolute;
+    position: fixed;
     z-index: 999;
 }
+
 .mini-navbar #sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle li a{
 	text-align:left;
+    color: #000 !important;
+}
+.dp-submenu-angle{
+    width: 170px !important;
+    left: 20px;
+    position: relative;
+    z-index: 99999;
+    content: " ";
+}
+.dp-submenu-angle li a{
+    text-align:left;
 }
 .mini-navbar #sidebar.active .sidebar-nav .metismenu a {
     padding: 16px 15px;
@@ -4106,12 +4122,12 @@ th.fc-day-header.fc-widget-header {
     align-items: center;
     margin-left: 10px;
 }
-.copy-icon, .clipboard-icon, .copy-usdt-depo-wall, .clipboard-usdt-depo-wall, .copy-usdt-depo-wall-menu, .clipboard-usdt-depo-wall-menu, .copy-usdt-with-wall, .clipboard-usdt-with-wall, .copy-bmind-depo-wall, .clipboard-bmind-depo-wall, .copy-bmind-with-wall, .clipboard-bmind-with-wall, .copy-musd-depo-wall, .clipboard-musd-depo-wall, .copy-musd-with-wall, .clipboard-musd-with-wall, .copy-mind-depo-wall, .clipboard-mind-depo-wall, .copy-mind-with-wall, .clipboard-mind-with-wall {
+.copy-icon, .clipboard-icon{
     font-size: 16px;
     margin-top: -15px !important;
     display: none;
 }
-.copy-icon, .copy-usdt-depo-wall, .copy-usdt-depo-wall-menu, .copy-usdt-with-wall, .copy-bmind-depo-wall,  .copy-bmind-with-wall, .copy-musd-depo-wall, .copy-musd-with-wall, .copy-mind-depo-wall, .copy-mind-with-wall {
+.copy-icon{
     display: inline;
 }
 .hidden-input {
@@ -4609,8 +4625,9 @@ th.fc-day-header.fc-widget-header {
 }
 .earn-page-staus .col-lg-6{
     width: 50%;
-    margin-left: 250px;
+    margin-left: 23%;
 }
+
 .payment-method .up-btn{
     background: none;
     border: none;
@@ -4707,4 +4724,18 @@ th.fc-day-header.fc-widget-header {
 }
 .elite-club-section .elite-content-card4 .elite-content-card-content .bullet-point-sec p {
     margin-right: 0;
+}
+.musd-page-btn-sec .page-section-btn{
+    width: 100% !important;
+    justify-content: start;
+    text-align: start;
+}
+.musd-page-btn-sec .page-section-btn .col-sm-6{
+    display: flex;
+}
+.musd-page-btn-sec .page-section-btn .col-sm-6 .btn-1{
+    margin-right: 10px;
+}
+.musd-page-btn-sec .page-section-btn .col-sm-6 .btn-2{
+    margin-left: 10px;
 }
