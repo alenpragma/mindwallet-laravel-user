@@ -1,10 +1,13 @@
 @media (min-width: 1400px) and (max-width: 1920px) {
     .elite-club-section .inner-image{
-        margin-top: -106%;
+        margin-top: -75%;
         height: 608px;
     }
+    .elite-club-section .elite-icon{
+        width: 1400px !important;
+    }
     .elite-club-section .elite-content-card{
-        padding-bottom: 28%;
+        padding-bottom: 36%;
     }
     .elite-club-section .elite-content-card2{
         padding-bottom: 2%;
@@ -13,7 +16,7 @@
         padding-bottom: 20px;
     }
     .elite-club-section .elite-content-card4{
-        padding-bottom: 30px;
+        padding-bottom: 33%;
     }
     .elite-club-section .trams{
         width: 67%;
@@ -107,6 +110,9 @@ svg{
     margin-top: -94%;
     width: 100%;
     height: -40% !important;
+}
+.kids-content-card3 .kids-price-section{
+    margin-left: 35%;
 }
 }
 
@@ -214,6 +220,9 @@ svg{
     width: 100%;
     padding-bottom: 30%;
     margin: 0;
+}
+.kids-content-card3 .kids-price-section{
+    margin-left: 30%;
 }
 }
  
@@ -579,6 +588,20 @@ st-wallet-list .row{
 }
 .musd-page-btn-sec .page-section-btn .col-sm-6 .btn-2{
     margin-left: 30px;
+}
+.kids-program-content{
+    padding-bottom: 40px !important;
+}
+.kids-join-inner{
+    text-align: left;
+}
+.kids-content-card3 .kids-price-section{
+    margin-left: 0;
+}
+.social-icons{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
 }
 }
  

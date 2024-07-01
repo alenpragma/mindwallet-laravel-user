@@ -495,62 +495,36 @@
                     <div class="admin-content res-mg-t-15 d-flex row justify-content-between">
 
                         <div class="row page-top-section">
-                            <!-- breadcome title Section  -->
+                                <!-- breadcome title Section  -->
                             <div class="col-sm-6 breadcome-heading">
-                                <h3>MUSD Transfer History</h3>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class=" breadcome-price-section">
-                                    <p class="breadcome-section-name">Available Balance:</p>
-                                    <p class="breadcome-section-price">547284.7562</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 musd-page-btn-sec">
-                            <div class="row page-section-btn pay-button">
-                                <div class="col-sm-6">
-                                    <div class="btn-1">
-                                        <button type="button" data-toggle="modal" data-target="#mindSimpleEarn" data-whatever=""  class="page-button">Send MUSD</button>
-                                        <div class="modal withdraw-modal fade" id="mindSimpleEarn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header text-left">
-                                                <h4 class="modal-title">Transfer MUSD</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <form>
-                                                        <div class="form-group">
-                                                        <label for="transfer-musd" class="col-form-label">Amount (MUSD)</label>
-                                                        <input type="text" class="form-control" id="transfer-musd">
-                                                        </div>
-                                                        <div class="form-group">
-                                                        <label for="musd-transfer-user" class="col-form-label">Username</label>
-                                                        <input type="text" class="form-control" id="musd-transfer-user">
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                                        <button type="button" class="btn btn-primary">Transfer</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h3>Transactions Report</h3>
                             </div>
                         </div>
 
                                  <!-- transection section 
          ============================================  -->
-                        <div class="transection-staus mg-t-30  mg-b-30">
+                        <div class="transection-staus mg-t-30  mg-b-30 all-transection">
                             <div class="container-fluid">
-                                <div class="row">
+                                <div class="row mg-b-30">
+                                    <div class="tab ">
+                                        <button class="tablinks" onclick="openWallet(event, 'CashWallet')">Cash Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'CoinWallet')">Coin Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'BonusWallet')">Bonus Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'StakingWallet')">Staking Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'USDWallet')">USD Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'AmbassadorWallet')">Ambassador Wallet</button>
+                                        <button class="tablinks" onclick="openWallet(event, 'CouponWallet')">Coupon Wallet</button>
+                                    </div>
+                                </div>
+                                <div id="CashWallet" class="row tabcontent">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Cash Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-sm-6 col-xs-12 data-target">
                                                     <p>Show</p>
@@ -577,104 +551,1040 @@
                                                     <thead>
                                                         <tr>
                                                             <th>SL</th>
-                                                            <th>Transfer Date</th>
-                                                            <th>MUSD Transfer To</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
                                                             <th>Description</th>
+                                                            <th>Amount</th>
                                                             <th>Type</th>
-                                                            <th>Ammount</th>
-                                                            <th>Status</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>$10 Ambassador Bonus from Admin	</td>
+                                                            <td>$10</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="CoinWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Token Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Token Settlement Adjustment</td>
+                                                            <td>System Transactions</td>
+                                                            <td>250 MIND Token settlement adjustment in Mind wallet for purchasing Alpha</td>
+                                                            <td>-250 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="BonusWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Bonus Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="StakingWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Staking Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>$10</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Purchased Staking Package</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Purchased Staking Package for MIND 2000</td>
+                                                            <td>2000 MIND</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="USDWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">USD Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Bmind Level Bonus</td>
+                                                            <td>edulife</td>
+                                                            <td>0.9 USDT Level 1 Bonus Credited from dhrubo</td>
+                                                            <td>0.9 USD</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="AmbassadorWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Ambassador Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
                                                         </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Ambassador Bonus</td>
+                                                            <td>adprogst</td>
+                                                            <td>25 MIND Ambassador Bonus from Admin</td>
+                                                            <td>25 MIND</td>
+                                                            <td>Credit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="custom-pagination">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.17188 19.3281C0.46875 18.5469 0.46875 17.375 1.17188 16.6719L16.1719 1.67188C16.9531 0.890625 18.125 0.890625 18.8281 1.67188C19.6094 2.375 19.6094 3.54688 18.8281 4.25L5.15625 17.9219L18.8281 31.6719C19.6094 32.375 19.6094 33.5469 18.8281 34.25C18.125 35.0312 16.9531 35.0312 16.25 34.25L1.17188 19.3281Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"><svg width="20" height="23" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18.8281 16.6719C19.5312 17.4531 19.5312 18.625 18.8281 19.3281L3.82812 34.3281C3.04688 35.1094 1.875 35.1094 1.17188 34.3281C0.390625 33.625 0.390625 32.4531 1.17188 31.75L14.8438 18.0781L1.17188 4.32812C0.390625 3.625 0.390625 2.45312 1.17188 1.75C1.875 0.96875 3.04688 0.96875 3.75 1.75L18.8281 16.6719Z" fill="white"/>
+                                                        </svg>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="CouponWallet" class="row tabcontent">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="transaction-status-wrap">
+                                            <div class="tab-heading mg-b-30">
+                                                <div class=" breadcome-price-section">
+                                                    <p class="breadcome-section-name">Coupon Wallet Balance:</p>
+                                                    <p class="breadcome-section-price">547284.7562</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12 data-target">
+                                                    <p>Show</p>
+                                                    <select name="" id="">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <p>Entries</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="transection-search">
+                                                        <form role="search" class="">
+                                                            <input type="text" placeholder="Search..." class="form-control">
+                                                            <a href=""><i class="fa fa-search"></i></a>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="transaction-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SL</th>
+                                                            <th>Staking Date</th>
+                                                            <th>Catagory</th>
+                                                            <th>RCVD From/Pay To</th>
+                                                            <th>Description</th>
+                                                            <th>Amount</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
                                                         <tr>
                                                             <td>1</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>2</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>3</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>4</td>
                                                             <td>2024-02-29 04:40:53</td>
-                                                            <td>dhrubo</td>
-                                                            <td>$275 Transfer to dhrubo</td>
-                                                            <td>Transfer Money</td>
-                                                            <td>-275</td>
-                                                            <td>expired</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>2024-02-29 04:40:53</td>
+                                                            <td>Coupon wallet deposit</td>
+                                                            <td>System Transactions</td>
+                                                            <td>Added $1100 to Coupon Wallet by reedeming coupon</td>
+                                                            <td>1100$</td>
+                                                            <td>Debit</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
