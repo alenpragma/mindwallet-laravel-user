@@ -204,24 +204,25 @@ setInterval(fetchMindPrice, 5000);
 
 // wallet copy 
 
-// USDT section 
-function UsdtDepositWallet() {
-	    const select = document.getElementById('selectUsdtDepositWallet');
-		
-	    const input = document.getElementById('usdtDepositAddress');
-	    console.log(input);
-	    input.value = select.value;
+
+
+	function selectWallet(section) {
+		const select = document.getElementById(`selectWallet${section}`);
+		const input = document.getElementById(`copyAddress${section}`);
+		input.value = select.value;
 	}
-	function copyUsdtDepositWallet(event) {
-        var walletInput = document.getElementById("usdtDepositAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
+	
+	function copyWallet(event, section) {
+		const walletInput = document.getElementById(`copyAddress${section}`);
+		walletInput.select();
+		walletInput.setSelectionRange(0, 99999);
 		event.preventDefault();
-		hiddenInput.select();
 		document.execCommand('copy');
 	
-		var copyIcon = document.querySelector('.copy-usdt-depo-wall');
-		var clipboardIcon = document.querySelector('.clipboard-usdt-depo-wall');
+		const sectionElement = document.querySelector(`.form-group[data-section="${section}"]`);
+		const copyIcon = sectionElement.querySelector('.copy-icon');
+		const clipboardIcon = sectionElement.querySelector('.clipboard-icon');
+	
 		copyIcon.style.display = 'none';
 		clipboardIcon.style.display = 'inline';
 	
@@ -229,196 +230,5 @@ function UsdtDepositWallet() {
 			clipboardIcon.style.display = 'none';
 			copyIcon.style.display = 'inline';
 		}, 1000);
-
-    }
-
-	function UsdtDepositWalletMenu() {
-	    const select = document.getElementById('selectUsdtDepositWalletMenu');
-		
-	    const input = document.getElementById('usdtDepositAddressMenu');
-	    console.log(input);
-	    input.value = select.value;
 	}
-	function copyUsdtDepositWalletMenu(event) {
-        var walletInput = document.getElementById("usdtDepositAddressMenu");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
 	
-		var copyIcon = document.querySelector('.copy-usdt-depo-wall-menu');
-		var clipboardIcon = document.querySelector('.clipboard-usdt-depo-wall-menu');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-	// BMIND Section
-
-	function bmindDepositWallet() {
-	    const select = document.getElementById('selectBmindDepositAddress');
-	    const input = document.getElementById('bmindDepositAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyBmindDepositWallet(event) {
-        var walletInput = document.getElementById("bmindDepositAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-bmind-depo-wall');
-		var clipboardIcon = document.querySelector('.clipboard-bmind-depo-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-	function bmindWithdrawWallet() {
-	    const select = document.getElementById('selectBmindWithdrawAddress');
-	    const input = document.getElementById('bmindWithdrawAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyBmindWithdrawWallet(event) {
-        var walletInput = document.getElementById("bmindWithdrawAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-bmind-with-wall');
-		var clipboardIcon = document.querySelector('.clipboard-bmind-with-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-
-	// MUSD Section
-
-	function musdDepositWallet() {
-	    const select = document.getElementById('selectMusdDepositAddress');
-	    const input = document.getElementById('musdDepositAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyMusdDepositWallet(event) {
-        var walletInput = document.getElementById("musdDepositAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-musd-depo-wall');
-		var clipboardIcon = document.querySelector('.clipboard-musd-depo-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-	function musdWithdrawWallet() {
-	    const select = document.getElementById('selectMusdWithdrawAddress');
-	    const input = document.getElementById('musdWithdrawAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyMusdWithdrawWallet(event) {
-        var walletInput = document.getElementById("musdWithdrawAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-musd-with-wall');
-		var clipboardIcon = document.querySelector('.clipboard-musd-with-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-	
-	// Mind Section
-
-	function mindDepositWallet() {
-	    const select = document.getElementById('selectMindDepositAddress');
-	    const input = document.getElementById('mindDepositAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyMindDepositWallet(event) {
-        var walletInput = document.getElementById("mindDepositAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-mind-depo-wall');
-		var clipboardIcon = document.querySelector('.clipboard-mind-depo-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
-
-	function mindWithdrawWallet() {
-	    const select = document.getElementById('selectMindWithdrawAddress');
-	    const input = document.getElementById('mindWithdrawAddress');
-	    console.log(input);
-	    input.value = select.value;
-	}
-	function copyMindWithdrawWallet(event) {
-        var walletInput = document.getElementById("mindWithdrawAddress");
-        walletInput.select();
-        walletInput.setSelectionRange(0, 99999);
-		event.preventDefault();
-		hiddenInput.select();
-		document.execCommand('copy');
-	
-		var copyIcon = document.querySelector('.copy-mind-with-wall');
-		var clipboardIcon = document.querySelector('.clipboard-mind-with-wall');
-		copyIcon.style.display = 'none';
-		clipboardIcon.style.display = 'inline';
-	
-		setTimeout(() => {
-			clipboardIcon.style.display = 'none';
-			copyIcon.style.display = 'inline';
-		}, 1000);
-
-    }
