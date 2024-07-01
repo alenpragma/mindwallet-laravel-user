@@ -4454,6 +4454,7 @@ th.fc-day-header.fc-widget-header {
 .social-icons{
     width: 50%;
     margin: auto;
+    margin-bottom: 60px;
 }
 .social-icons ul{
     display: flex;
@@ -4671,7 +4672,6 @@ th.fc-day-header.fc-widget-header {
     justify-content: center;
 }
 .elite-club-section .elite-content-card-content svg{
-    margin-right: 6px;
     width: 40px !important;
 }
 .elite-club-section .elite-content-card-content .bullet-point-sec .bullet-point-list{
@@ -4720,7 +4720,7 @@ th.fc-day-header.fc-widget-header {
     height: 450px !important;
 }
 .elite-club-section .elite-content-card4{
-    padding-bottom: 20%;
+    padding-bottom: 17%;
 }
 .elite-club-section .elite-content-card4 .elite-content-card-content .bullet-point-sec p {
     margin-right: 0;
@@ -4738,4 +4738,85 @@ th.fc-day-header.fc-widget-header {
 }
 .musd-page-btn-sec .page-section-btn .col-sm-6 .btn-2{
     margin-left: 10px;
+}
+
+.tab {
+    margin: 0 30px;
+}
+.tab button {
+    background-color: #939392;
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: 0.3s;
+    margin:6px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.tab button:hover {
+    background-color: #ff971d;
+}
+.tab button.active {
+    background-color: #ff971d;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+    border-top: none;
+}
+.all-transection .breadcome-price-section {
+    display: flex;
+}
+.all-transection .breadcome-price-section .breadcome-section-name{
+    padding: 0 5px;
+    border-bottom: 1px solid #ff971d;
+}
+.all-transection .breadcome-price-section .breadcome-section-price{
+    padding: 0 5px;
+    border-bottom: 1px solid #ff971d;
+    color: #ff971d;
+}
+.kids-image{
+    border-radius: 10px;
+}
+.kids-program-content{
+    padding-bottom: 215px !important;
+    justify-content: center;
+}
+.kids-content-card2{
+    padding-bottom: 110px !important;
+}
+.kids-content-card4{
+    padding-bottom: 20px !important;
+}
+.kids-content-card5{
+    padding-bottom: 85px !important;
+}
+.kids-content-card3{
+    padding: 20px 40px !important;
+}
+.kids-content-card3 .kids-price-section{
+    display: flex;
+    text-align: right !important;
+    align-items: flex-end !important;
+    margin-left: 55%;
+    margin-top: 20px;
+}
+.kids-join-inner{
+    text-align: right;
+}
+.kids-content-card3 .kids-price-section .kids-section-price{
+    padding: 0 5px;
+    color: #ff971d;
+}
+.kids-content-card3 button{
+    background-color: #ff971d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 8px;
 }
