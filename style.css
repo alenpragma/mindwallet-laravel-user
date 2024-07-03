@@ -4802,7 +4802,7 @@ th.fc-day-header.fc-widget-header {
     display: flex;
     text-align: right !important;
     align-items: flex-end !important;
-    margin-left: 55%;
+    margin-left: 54%;
     margin-top: 20px;
 }
 .kids-join-inner{
@@ -4812,11 +4812,72 @@ th.fc-day-header.fc-widget-header {
     padding: 0 5px;
     color: #ff971d;
 }
-.kids-content-card3 button{
+.kids-content-card3 .elite-btn{
     background-color: #ff971d;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 10px 16px;
+    border-radius: 8px;
+}
+.kids-content-card3 .modal .kids-price-section{
+    display: flex;
+    margin-left: 35%;
+    margin-top: -22px;
+}
+.custom-date-input {
+    position: relative;
+}
+
+.custom-date-input input[type="date"] {
+    width: 100%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    -webkit-appearance: none; 
+    -moz-appearance: textfield; 
+    appearance: none; 
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: -20px;
+    cursor: pointer;
+}
+
+.custom-date-input .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #007BFF;
+    cursor: pointer;
+}
+.kids-stage-list .card-box{
+    background: linear-gradient(to bottom left, #0A00AF, #CB7600);
+    padding: 30px;
+    border-radius: 10px;
+}
+.kids-page-staus .data-title{
+    text-align: end;  
+    align-items: end; 
+    margin-bottom: 30px;
+}
+.kids-page-staus .data-title span{
+    color: #ff971d; 
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 6px;
+}
+.kids-page-staus .kids-content-card-inner .kids-data{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.kids-page-staus .kids-stage-list button{
+    background-color: #ff971d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 40px;
     border-radius: 8px;
 }
