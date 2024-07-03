@@ -114,6 +114,7 @@ svg{
 .kids-content-card3 .kids-price-section{
     margin-left: 35%;
 }
+
 }
 
  
@@ -602,6 +603,11 @@ st-wallet-list .row{
     width: 80%;
     margin: auto;
     margin-bottom: 60px;
+}
+.kids-content-card3 .modal .kids-price-section{
+    text-align: start !important;
+    margin-left: 0;
+    margin-top: 0;
 }
 }
  

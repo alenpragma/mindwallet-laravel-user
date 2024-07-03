@@ -249,3 +249,17 @@ setInterval(fetchMindPrice, 5000);
     document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".tablinks").click();
     });
+
+
+	// for show kids age
+
+	function calculateAge() {
+		let dob = new Date(document.getElementById("kids-dob").value);
+		let today = new Date();
+		let age = today.getFullYear() - dob.getFullYear();
+		let month = today.getMonth() - dob.getMonth();
+		if (month < 0 || (month === 0 && today.getDate() < dob.getDate())) {
+			age--;
+		}
+		document.getElementById("kids-age").value = age;
+	}
